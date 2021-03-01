@@ -28,7 +28,7 @@ gulp.task("scss", function () {
 gulp.task("imagemin", function () {
   return gulp
     .src('./img/**')
-    .pipe(changed('./dist/assets/images'))
+    .pipe(changed('./img'))
     .pipe(
       imagemin([
         pngquant({
