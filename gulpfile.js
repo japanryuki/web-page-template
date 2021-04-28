@@ -1,6 +1,7 @@
 // gulpプラグインの読み込み
 const gulp = require("gulp");
 const sass = require("gulp-sass");
+const packageImporter = require("node-sass-package-importer");
 const sassGlob = require("gulp-sass-glob");
 const sassPrefix = require("gulp-autoprefixer");
 
@@ -8,10 +9,12 @@ const imagemin = require("gulp-imagemin");
 const mozjpeg = require("imagemin-mozjpeg");
 const pngquant = require("imagemin-pngquant");
 const changed = require("gulp-changed");
-const keepfolder = require("imagemin-keep-folder");
 
-const concat = require("gulp-concat");
+const cleancss = require("gulp-clean-css");
 const uglify = require("gulp-uglify");
+
+const browserify = require("browserify");
+const source = require("vinyl-source-stream");
 
 const imageminOption = [
   pngquant({ quality: [0.65, 0.8] }),
@@ -26,39 +29,59 @@ const imageminOption = [
   imagemin.svgo(),
 ];
 
-// style.scssタスクを作成する
-gulp.task("scss", function () {
+function scss() {
   return gulp.watch("scss/**/*.scss", function () {
     return gulp
-      .src("scss/style.scss")
+      .src("scss/bundle.scss")
       .pipe(sassGlob())
-      .pipe(sass({ outputStyle: "expanded" }))
+      .pipe(
+        sass({
+          outputStyle: "expanded",
+          importer: packageImporter({
+            extensions: [".scss", ".css"],
+          }),
+        })
+      )
       .pipe(sassPrefix())
       .on("error", sass.logError)
       .pipe(gulp.dest("css"));
   });
-});
+}
 
-//画像圧縮
-gulp.task("imagemin", function () {
+exports.scss = scss;
+
+function js() {
+  return gulp.watch("js/common.js", function () {
+    return browserify({ entries: "./js/common.js", debug: true })
+      .bundle()
+      .pipe(source("bundle.js"))
+      .pipe(gulp.dest("./js"));
+  });
+}
+
+exports.js = js;
+
+function imgmin() {
   return gulp
     .src("./img/**/*.+(jpg|jpeg|png|gif|svg)")
     .pipe(changed("./img"))
     .pipe(imagemin(imageminOption))
-    .pipe(gulp.dest("./img"));
-});
+    .pipe(gulp.dest("./dist/img"));
+}
 
-gulp.task("js", function () {
-  return gulp
-    .src(["./lib/js/jquery.min.js"])
-    .pipe(concat("vendor.min.js"))
-    .pipe(uglify())
-    .pipe(gulp.dest("./js"));
-});
+function htmlcopy() {
+  return gulp.src("./index.html").pipe(gulp.dest("./dist"));
+}
 
-gulp.task("css", function () {
+function jsbuild() {
+  return gulp.src("./js/bundle.js").pipe(uglify()).pipe(gulp.dest("./dist/js"));
+}
+
+function cssbuild() {
   return gulp
-    .src("./lib/css/*.css")
-    .pipe(concat("vendor.css"))
-    .pipe(gulp.dest("./css"));
-});
+    .src("./css/bundle.css")
+    .pipe(cleancss())
+    .pipe(gulp.dest("./dist/css"));
+}
+
+exports.build = gulp.series(jsbuild, cssbuild, htmlcopy, imgmin);
