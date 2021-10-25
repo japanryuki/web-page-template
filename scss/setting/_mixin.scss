@@ -3,3 +3,15 @@
     @content;
   }
 }
+
+@mixin mqFree($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin mqFreeMax($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}

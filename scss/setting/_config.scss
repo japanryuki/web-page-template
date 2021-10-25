@@ -4,12 +4,14 @@
 $layer: ();
 
 // font
-$font-family-default: '游ゴシック体', 'Yu Gothic', yugothic, 'ヒラギノ角ゴ Pro',
-  'Hiragino Kaku Gothic Pro', 'メイリオ', meiryo, 'MS Pゴシック', 'MS PGothic', sans-serif;
+$font-family-default: "游ゴシック体", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro",
+  "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic",
+  sans-serif;
 $font-family-base: $font-family-default;
 
 // break point
 $breakpoints: (
-  'sp': '(max-width: 767px)',
-  'pc': '(min-width: 768px)',
+  "sm": "(max-width: 767px)",
+  "md": "(min-width: 900px)",
+  "lg": "(min-width: 1366px)",
 );
