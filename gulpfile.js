@@ -16,23 +16,10 @@ const uglify = require("gulp-uglify");
 const browserify = require("browserify");
 const source = require("vinyl-source-stream");
 
-const imageminOption = [
-  pngquant({ quality: [0.65, 0.8] }),
-  mozjpeg({ quality: 85 }),
-  imagemin.gifsicle({
-    interlaced: false,
-    optimizationLevel: 3,
-    colors: 256,
-  }),
-  imagemin.mozjpeg(),
-  imagemin.optipng(),
-  imagemin.svgo(),
-];
-
 function scss() {
   return gulp.watch("scss/**/*.scss", function () {
     return gulp
-      .src("scss/bundle.scss")
+      .src("scss/style.scss")
       .pipe(sassGlob())
       .pipe(
         sass({
@@ -60,14 +47,6 @@ function js() {
 }
 
 exports.js = js;
-
-function imgmin() {
-  return gulp
-    .src("./img/**/*.+(jpg|jpeg|png|gif|svg)")
-    .pipe(changed("./img"))
-    .pipe(imagemin(imageminOption))
-    .pipe(gulp.dest("./dist/img"));
-}
 
 function htmlcopy() {
   return gulp.src("./index.html").pipe(gulp.dest("./dist"));
