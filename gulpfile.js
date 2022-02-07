@@ -17,50 +17,47 @@ const browserify = require("browserify");
 const source = require("vinyl-source-stream");
 
 function scss() {
-  return gulp.watch("scss/**/*.scss", function () {
-    return gulp
-      .src("scss/style.scss")
-      .pipe(sassGlob())
-      .pipe(
-        sass({
-          outputStyle: "expanded",
-          importer: packageImporter({
-            extensions: [".scss", ".css"],
-          }),
-        })
-      )
-      .pipe(sassPrefix())
-      .on("error", sass.logError)
-      .pipe(gulp.dest("css"));
-  });
+    return gulp.watch("scss/**/*.scss", function () {
+        return gulp
+            .src("scss/custom.scss")
+            .pipe(sassGlob())
+            .pipe(
+                sass({
+                    outputStyle: "expanded",
+                    importer: packageImporter({
+                        extensions: [".scss", ".css"],
+                    }),
+                })
+            )
+            .pipe(sassPrefix())
+            .on("error", sass.logError)
+            .pipe(gulp.dest("css"));
+    });
 }
 
 exports.scss = scss;
 
 function js() {
-  return gulp.watch("js/common.js", function () {
-    return browserify({ entries: "./js/common.js", debug: true })
-      .bundle()
-      .pipe(source("bundle.js"))
-      .pipe(gulp.dest("./js"));
-  });
+    return gulp.watch("js/common.js", function () {
+        return browserify({ entries: "./js/common.js", debug: true })
+            .bundle()
+            .pipe(source("bundle.js"))
+            .pipe(gulp.dest("./js"));
+    });
 }
 
 exports.js = js;
 
 function htmlcopy() {
-  return gulp.src("./index.html").pipe(gulp.dest("./dist"));
+    return gulp.src("./index.html").pipe(gulp.dest("./dist"));
 }
 
 function jsbuild() {
-  return gulp.src("./js/bundle.js").pipe(uglify()).pipe(gulp.dest("./dist/js"));
+    return gulp.src("./js/bundle.js").pipe(uglify()).pipe(gulp.dest("./dist/js"));
 }
 
 function cssbuild() {
-  return gulp
-    .src("./css/bundle.css")
-    .pipe(cleancss())
-    .pipe(gulp.dest("./dist/css"));
+    return gulp.src("./css/bundle.css").pipe(cleancss()).pipe(gulp.dest("./dist/css"));
 }
 
 exports.build = gulp.series(jsbuild, cssbuild, htmlcopy, imgmin);

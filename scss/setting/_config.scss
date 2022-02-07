@@ -5,13 +5,12 @@ $layer: ();
 
 // font
 $font-family-default: "游ゴシック体", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro",
-  "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic",
-  sans-serif;
+    "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
 $font-family-base: $font-family-default;
 
 // break point
 $breakpoints: (
-  "sm": "(max-width: 767px)",
-  "md": "(min-width: 900px)",
-  "lg": "(min-width: 1366px)",
+    "sm": "(max-width: 767px)",
+    "md": "(min-width: 768px)",
+    "lg": "(min-width: 1366px)",
 );
