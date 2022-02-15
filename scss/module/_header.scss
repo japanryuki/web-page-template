@@ -1,2 +1,17 @@
-.footer {
+.custom {
+  .breadcrumb-bar {
+      padding-top: 3.75rem !important;
+
+    @include mq("md"){
+      padding-top: 5.6875rem !important;
+    }
+
+    @include mqFree("992px"){
+      padding-top: 6.125rem !important;
+    }
+    
+    @include mqFree("1100px"){
+      padding-top: 7.5rem !important;
+    }
+  }
 }

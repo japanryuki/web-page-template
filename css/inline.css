@@ -1,0 +1,34 @@
+.hr-heading,
+.navbar-custom,
+.navbar-custom .dropdown-menu,
+.navbar-custom .appsItemCategoryTag_child a:hover,
+.basic-1 .faqtopics .chapter-title,
+.split .area-2,
+.navbar-custom,
+.flowlist > li div h4 .icon,
+.blog_inner .read_more a,
+.blogtop a.button,
+.communityMain #productsLimitedUrl .urlBox,
+.ChildCategories li a,
+#moreItems a,
+a.toItemPage,
+.searchWidget .form-control-submit-button,
+.noItems .form-control-submit-button {
+    background-color: #96002d !important;
+}
+
+body {
+    color: #444444;
+    background-image: none;
+    background-color: #ffffff;
+}
+
+@media (min-width: 992px) {
+    .frontpage .navbar-custom .navbar-brand .logoText,
+    .frontpage .navbar-custom .nav-item .nav-link,
+    .frontpage .navbar-custom .nav-item .nav-link:hover,
+    .frontpage .navbar-custom .nav-item .nav-link.active,
+    .frontpage form#hsearch:after {
+        color: #000000 !important;
+    }
+}

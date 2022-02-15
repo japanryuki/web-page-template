@@ -1,3 +1,10 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Hannari";
+  src: url("https://cdn.leafscape.be/hannari/hannari_web.woff2") format("woff2");
+  font-display: swap;
+}
+
 *,
 *::before,
 *::after {
@@ -38,4 +45,3366 @@ table {
 
 img {
   width: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+}
+
+p {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+}
+
+h2 {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+}
+
+.u-checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.u-checkbox + span {
+  cursor: pointer;
+  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-size: 1.375rem;
+  font-weight: 400;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .u-checkbox + span {
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .u-checkbox + span {
+    font-size: 1.2rem;
+    padding-left: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .u-checkbox + span {
+    font-size: 1.3125rem;
+  }
+}
+
+.u-checkbox + span::before {
+  background: #fff;
+  border: 2px solid #444444;
+  border-radius: 3px;
+  content: "";
+  display: block;
+  height: 28px;
+  left: 0;
+  position: absolute;
+  top: 55%;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 28px;
+}
+
+@media (max-width: 767px) {
+  .u-checkbox + span::before {
+    height: 23px;
+    width: 23px;
+  }
+}
+
+.u-checkbox + span::after {
+  border-bottom: 3px solid #ffffff;
+  border-left: 3px solid #ffffff;
+  content: "";
+  display: block;
+  height: 13px;
+  left: 4px;
+  opacity: 0;
+  position: absolute;
+  top: 48%;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  width: 20px;
+}
+
+@media (max-width: 767px) {
+  .u-checkbox + span::after {
+    height: 10px;
+    width: 16px;
+  }
+}
+
+.u-checkbox:checked + span::after {
+  opacity: 1;
+}
+
+.u-checkbox:checked + span::before {
+  background: #444444;
+}
+
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  max-width: 1230px;
+}
+
+.hr-heading {
+  width: 160px;
+  height: 13px;
+  margin-top: 22px;
+}
+
+@media (max-width: 767px) {
+  .hr-heading {
+    height: 6px;
+    margin-top: 0.8rem;
+    width: 80px;
+  }
+}
+
+.introConts {
+  margin: 3.75rem 0;
+}
+
+@media (max-width: 767px) {
+  .introConts {
+    margin: 2rem 0;
+  }
+}
+
+.t-align {
+  text-align: center;
+}
+
+.u-hover {
+  -webkit-transition: 0.3s ease opacity;
+  transition: 0.3s ease opacity;
+}
+
+.u-hover:hover {
+  opacity: 0.8 !important;
+  text-decoration: none !important;
+}
+
+@media (max-width: 767px) {
+  ._pc {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .custom a.back-to-top.frontPage {
+    bottom: 4.5rem;
+  }
+}
+
+.aboutPage {
+  /* リキッドレイアウト対応 */
+  /* pcの電話番号発信対応 */
+}
+
+.aboutPage .u-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .u-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
+
+.aboutPage .c-text {
+  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .c-text {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+  }
+}
+
+.aboutPage .c-title {
+  font-size: 24px;
+  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .c-title {
+    font-size: 2rem;
+  }
+}
+
+.aboutPage .p-about__inner {
+  padding: 0 20px;
+}
+
+.aboutPage .p-about__title {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-weight: 600 !important;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-about__title {
+    text-align: left;
+  }
+}
+
+.aboutPage .p-about__title::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #96002d;
+  top: -50px;
+  left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-about__title::before {
+    width: 74.166666%;
+    top: 50%;
+    left: 300px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-about__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    margin-top: 42px;
+  }
+}
+
+.aboutPage .p-about__logo {
+  width: 152px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-about__logo {
+    width: 226px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+.aboutPage .p-about__text {
+  margin-top: 30px;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-about__text {
+    width: calc(100% - 312px);
+    margin-right: 86px;
+  }
+}
+
+.aboutPage .p-concept__inner {
+  background: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-concept__inner {
+    padding: 60px 0 110px;
+  }
+}
+
+.aboutPage .p-concept__box {
+  max-width: 790px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.aboutPage .p-concept__label {
+  width: 122px;
+  margin: auto;
+}
+
+.aboutPage .p-concept__title {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-weight: 600 !important;
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-concept__title {
+    margin-top: 64px;
+  }
+}
+
+.aboutPage .p-concept__subtitle {
+  color: #96002d;
+  font-weight: 400 !important;
+  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 33px;
+  line-height: 1.625;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-concept__subtitle {
+    margin-top: 132px;
+    font-size: 32px;
+  }
+}
+
+.aboutPage .p-concept__text {
+  margin-top: 27px;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-concept__text {
+    margin-top: 60px;
+    text-align: center;
+  }
+}
+
+.aboutPage .p-concept__unit {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-concept__unit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 60px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.aboutPage .p-concept__circle {
+  width: 90px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-concept__circle {
+    width: 208px;
+  }
+}
+
+.aboutPage .p-concept__unit .p-concept__text {
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-concept__unit .p-concept__text {
+    width: calc(100% - 208px);
+    margin-left: 58px;
+    -moz-text-align-last: left;
+    text-align-last: left;
+  }
+}
+
+.aboutPage .p-concept__text--left {
+  text-align: left;
+}
+
+.aboutPage .p-customers__inner {
+  background: #fff;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.aboutPage .p-customers__label {
+  width: 122px;
+  margin: 0 auto;
+}
+
+.aboutPage .p-customers__title {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-weight: 600 !important;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-customers__title {
+    margin-top: 64px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-customers__units {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-customers__units--1 {
+    margin-left: 3rem;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-customers__units--2 {
+    margin-right: 3rem;
+    margin-top: 60px;
+  }
+}
+
+.aboutPage .p-customers__unit {
+  position: relative;
+  background: url(https://basefile.akamaized.net/ubusuna3-base-shop/6203ab4a25fab/service_washi.png) center center/cover repeat;
+  width: 302px;
+  height: 302px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-customers__unit {
+    margin: 0;
+    width: 395px;
+    height: 395px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-customers__unit--1 {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-customers__unit--2,
+  .aboutPage .p-customers__unit--4 {
+    margin-left: 145px;
+  }
+}
+
+.aboutPage .p-customers__unit--1::before {
+  position: absolute;
+  content: "";
+  background: url(https://basefile.akamaized.net/ubusuna3-base-shop/6203abb17d0b3/tomato.png) center center/contain no-repeat;
+  top: -43px;
+  right: -25px;
+  width: 100px;
+  height: 106px;
+}
+
+@media (max-width: 374px) {
+  .aboutPage .p-customers__unit--1::before {
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-customers__unit--1::before {
+    width: 123px;
+    height: 132px;
+    right: -60px;
+    top: 0;
+  }
+}
+
+.aboutPage .p-customers__unit--1::after {
+  position: absolute;
+  content: "";
+  background: url(https://basefile.akamaized.net/ubusuna3-base-shop/6203ab98ddebe/persimmon.png) center center/contain no-repeat;
+  bottom: -40px;
+  left: 15px;
+  width: 94px;
+  height: 81px;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-customers__unit--1::after {
+    width: 117px;
+    height: 101px;
+    left: -46px;
+    bottom: 0;
+  }
+}
+
+.aboutPage .p-customers__unit--2::before {
+  position: absolute;
+  content: "";
+  background: url(https://basefile.akamaized.net/ubusuna3-base-shop/6203abbebf601/tuna.png) center center/contain no-repeat;
+  bottom: -102px;
+  right: 27px;
+  width: 150px;
+  height: 170px;
+  z-index: 1;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-customers__unit--2::before {
+    width: 279px;
+    height: 315px;
+    bottom: inherit;
+    top: -100px;
+    right: -120px;
+  }
+}
+
+.aboutPage .p-customers__unit--3::before {
+  position: absolute;
+  content: "";
+  background: url(https://basefile.akamaized.net/ubusuna3-base-shop/6203ab67987b3/egg.png) center center/contain no-repeat;
+  bottom: -36px;
+  right: 27px;
+  width: 88px;
+  height: 72px;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-customers__unit--3::before {
+    right: inherit;
+    left: -50px;
+    width: 132px;
+    height: 108px;
+  }
+}
+
+.aboutPage .p-customers__unit--4::before {
+  position: absolute;
+  content: "";
+  background: url(https://basefile.akamaized.net/ubusuna3-base-shop/6203ab892c973/lunchbox.png) center center/contain no-repeat;
+  top: 21px;
+  left: -20px;
+  width: 100px;
+  height: 70px;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-customers__unit--4::before {
+    width: 171px;
+    height: 121px;
+    left: -87px;
+    top: -9px;
+  }
+}
+
+.aboutPage .p-customers__content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  padding: 0 35px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.aboutPage .p-customers__subtitle {
+  color: #96002d;
+  font-weight: 400 !important;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  line-height: 1.3;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-customers__subtitle {
+    font-size: 40px;
+  }
+}
+
+.aboutPage .p-customers__text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-customers__text {
+    font-size: 18px;
+  }
+}
+
+.aboutPage .p-customers__text span {
+  color: #96002d;
+}
+
+.aboutPage .p-food__inner {
+  background-color: #fff;
+  padding: 50px 20px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .aboutPage .p-food__inner {
+    padding: 50px 15px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-food__inner {
+    padding: 60px 73px 124px;
+    max-width: 1200px;
+  }
+}
+
+.aboutPage .p-food__label {
+  width: 122px;
+  margin: 0 auto;
+}
+
+.aboutPage .p-food__title {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .aboutPage .p-food__title {
+    margin-bottom: 15px;
+  }
+}
+
+.aboutPage .p-food__text {
+  margin-top: -0.5rem;
+  text-align: left;
+}
+
+@media (min-width: 1100px) {
+  .aboutPage .p-food__text {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 768px;
+  }
+}
+
+.aboutPage .p-food__unit {
+  padding: 30px 0;
+  border-top: 2px solid #96002d;
+}
+
+.aboutPage .p-food__unit .p-food__text {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 690px;
+  width: 100%;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-food__unit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 60px 1rem;
+  }
+  .aboutPage .p-food__unit .p-food__text {
+    margin-left: 2rem;
+    max-width: 690px;
+  }
+}
+
+.aboutPage .p-food__unit--1 {
+  margin-top: 3.5rem;
+}
+
+.aboutPage .p-food__unit--5 {
+  border-bottom: 2px solid #96002d;
+}
+
+.aboutPage .p-food__subtitle {
+  color: #96002d;
+  font-size: 35px;
+  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-weight: 400 !important;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-food__subtitle {
+    margin-bottom: 0;
+    max-width: 180px;
+  }
+}
+
+.aboutPage .p-member__inner {
+  margin: 0 auto;
+}
+
+.aboutPage .p-member__label {
+  width: 122px;
+  margin: 0 auto;
+}
+
+.aboutPage .p-member__title {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-weight: 600 !important;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .aboutPage .p-member__title br {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-member__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-member__units {
+    width: calc(100% - 474px);
+    -moz-text-align-last: left;
+    text-align-last: left;
+  }
+}
+
+.aboutPage .p-member__unit {
+  margin-top: 35px;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-member__unit {
+    margin-top: 60px;
+  }
+}
+
+.aboutPage .p-member__subtitle {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-member__subtitle {
+    font-size: 28px;
+  }
+}
+
+.aboutPage .p-member__text {
+  font-size: 1rem;
+  margin-top: 15px;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .aboutPage .p-member__text br._sm {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-member__text {
+    margin-top: 30px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-member__info {
+    width: 416px;
+    margin-left: 58px;
+  }
+}
+
+.aboutPage .p-member__img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.aboutPage .p-member__text--bottom {
+  text-align: center;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-member__text--bottom {
+    -moz-text-align-last: left;
+    text-align-last: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-sevice__inner {
+    max-width: 680px !important;
+  }
+}
+
+.aboutPage .p-service__label {
+  width: 122px;
+  margin: auto;
+}
+
+.aboutPage .p-servie__title {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-weight: 600 !important;
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-servie__title {
+    font-size: 32px;
+    margin-top: 64px;
+  }
+}
+
+.aboutPage .p-service__unit {
+  max-width: 530px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .aboutPage .p-service__unit {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .aboutPage .p-service__unit {
+    margin-left: 4rem;
+    margin-right: -2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-service__unit {
+    margin-top: 60px;
+  }
+}
+
+.aboutPage .p-service__subtitle {
+  font-size: 28px;
+  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+}
+
+@media (max-width: 767px) {
+  .aboutPage .p-service__subtitle {
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-service__subtitle {
+    font-size: 32px;
+    width: 2em;
+  }
+}
+
+.aboutPage .p-service__text {
+  font-size: 1rem;
+  margin-top: -0.5rem;
+}
+
+@media (max-width: 767px) {
+  .aboutPage .p-service__text {
+    -webkit-font-feature-settings: "palt";
+            font-feature-settings: "palt";
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-service__text {
+    margin-left: 32px;
+    width: calc(100% - 2em - 32px);
+    -moz-text-align-last: left;
+    text-align-last: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-service__unit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.aboutPage .p-shop__label {
+  width: 122px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-shop__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 1.5rem;
+  }
+}
+
+.aboutPage .p-shop__title {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-weight: 600 !important;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.aboutPage .p-shop__sutitle {
+  text-align: center;
+  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 1.6rem;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-shop__sutitle {
+    font-size: 28px;
+    width: 250px;
+  }
+}
+
+.aboutPage .p-shop__text {
+  padding: 0 20px;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-shop__imgs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+}
+
+.aboutPage .p-shop__img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-shop__img {
+    margin-top: 0;
+  }
+}
+
+.aboutPage .p-shop__img--3 {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-shop__img--3 {
+    margin-bottom: 0;
+  }
+}
+
+.aboutPage .p-shop__tel {
+  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-size: 14px;
+  padding: 0 20px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-shop__tel {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-shop__about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.aboutPage .p-shop__info {
+  font-size: 14px;
+  padding: 0 20px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-shop__info {
+    font-size: 16px;
+    margin-top: 60px;
+    width: calc(100% - 614px);
+  }
+}
+
+.aboutPage .p-shop__info-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-shop__info-row {
+    margin-top: 30px;
+  }
+}
+
+.aboutPage .p-shop__info-row dt {
+  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-weight: 400;
+  width: 4em;
+}
+
+.aboutPage .p-shop__info-row dd {
+  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  margin-left: 20px;
+  width: calc(100% - 4em - 20px);
+}
+
+.aboutPage .p-shop__map {
+  position: relative;
+  padding-top: 92.35%;
+  width: 100%;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPage .p-shop__map {
+    width: 614px;
+    padding-top: 40%;
+  }
+}
+
+.aboutPage .p-shop__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutPage .p-top__title {
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .aboutPage .p-top__title {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-top__title {
+    font-size: 60px;
+  }
+}
+
+.aboutPage .p-top__img {
+  width: 100%;
+  margin-top: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .p-top__img {
+    margin-top: 100px;
+  }
+}
+
+.aboutPage .p-top__text {
+  font-size: 20px;
+  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 34px;
+}
+
+@media (min-width: 768px) {
+  .aboutPage .p-top__text {
+    margin-top: 112px;
+    font-size: 46px;
+    line-height: 1.3333333333;
+  }
+}
+
+@media (min-width: 900px) {
+  .aboutPage .p-top__text {
+    font-size: 60px;
+  }
+}
+
+.aboutPage .l-about {
+  padding: 3rem 0 6.875rem;
+}
+
+.aboutPage .l-concept {
+  padding: 50px 15px;
+}
+
+@media (max-width: 767px) {
+  .aboutPage .l-concept {
+    padding: 50px 0;
+  }
+}
+
+.aboutPage .l-customers {
+  padding: 50px 0;
+  overflow-x: hidden;
+}
+
+.aboutPage .l-food {
+  padding: 0 15px;
+}
+
+.aboutPage .l-inner {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .l-inner {
+    max-width: 1250px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+.aboutPage .l-member {
+  padding: 50px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .l-member {
+    padding: 124px 0 60px;
+  }
+}
+
+.aboutPage .l-service {
+  padding: 50px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .l-service {
+    padding: 125px 0 100px;
+  }
+}
+
+.aboutPage .l-shop {
+  padding: 50px 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPage .l-shop {
+    padding: 120px 0 90px;
+  }
+}
+
+.aboutPage .l-top {
+  margin-top: 3.8rem;
+  margin-bottom: 2.6875rem;
+}
+
+@media (max-width: 767px) {
+  .aboutPage .l-top {
+    margin-top: 2.8rem;
+    margin-bottom: 0;
+  }
+}
+
+.aboutPage main._about {
+  background: url(https://basefile.akamaized.net/ubusuna3-base-shop/6204ba7770e09/bg.png) center center/100% repeat;
+}
+
+@media (min-width: 768px) {
+  .aboutPage main._about {
+    padding-top: 6.125rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .aboutPage main._about {
+    padding-top: 7.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutPage main._about {
+    padding-top: 3.75rem;
+  }
+}
+
+.aboutPage .p-about_bwrap {
+  margin-top: 7.5rem;
+}
+
+@media (min-width: 768px) {
+  .aboutPage .p-about_bwrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.aboutPage .p-about_bwrap a {
+  background: #fff;
+  border: 1px solid #96002d;
+  color: #96002d;
+  display: block;
+  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  max-width: 266px;
+  letter-spacing: 0.1em;
+  padding: 0.8rem;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .aboutPage .p-about_bwrap a {
+    font-size: 0.9375rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutPage .p-about_bwrap a {
+    max-width: 146px;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutPage .p-about_bwrap a:first-child {
+    margin-bottom: 1.875rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .aboutPage .p-about_bwrap a:first-child {
+    margin-right: 2.8rem;
+  }
+}
+
+.aboutPage .p-about_bwrap a span {
+  padding-right: 1.5rem;
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  .aboutPage .p-about_bwrap a span {
+    padding-right: 0.7rem;
+  }
+}
+
+.aboutPage .p-about_bwrap a span::after {
+  background: url(https://basefile.akamaized.net/ubusuna3-base-shop/6204c8f7d926e/arrow.png) center/cover no-repeat;
+  content: "";
+  display: block;
+  height: 12px;
+  position: absolute;
+  right: 0;
+  top: 53%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 7px;
+}
+
+@media (max-width: 500px) {
+  .aboutPage .p-about_bwrap a span::after {
+    right: -2px;
+  }
+}
+
+.custom .main #about .read_more a {
+  color: #fff !important;
+  font-size: 1.125rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.custom .blogListMain .blog_inner {
+  visibility: hidden;
+}
+
+.custom .blogListMain .blog_inner._visible {
+  visibility: visible;
+}
+
+.custom .blogDetail .social {
+  display: none !important;
+}
+
+.custom .blogDetail .blog_publish {
+  display: none;
+}
+
+.custom .blogDetail .blog_publish._visible {
+  display: block;
+}
+
+.blogPage h1 {
+  display: none;
+  font-weight: 600 !important;
+  margin-bottom: 2rem;
+}
+
+.blogPage h1._visible {
+  display: block;
+}
+
+.blogPage .ex-header {
+  padding-top: 5.75rem !important;
+}
+
+@media (min-width: 768px) {
+  .blogPage .ex-header {
+    padding-top: 7.6875rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .blogPage .ex-header {
+    padding-top: 8.125rem !important;
+  }
+}
+
+@media (min-width: 1100px) {
+  .blogPage .ex-header {
+    padding-top: 9.5rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .blogPage .blog_head_image {
+    width: 35%;
+  }
+}
+
+.blogPage .blog_head_image a {
+  display: block;
+  padding-top: 60%;
+  position: relative;
+}
+
+.blogPage .blog_head_image a img {
+  display: block;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.categoryPage .card-image {
+  padding-top: 75.18%;
+  position: relative;
+  width: 100%;
+}
+
+.categoryPage .card-image img {
+  display: block;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.categoryPage #itemthumbs,
+.categoryPage .additionalLoadItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.categoryPage #itemthumbs .card,
+.categoryPage .additionalLoadItems .card {
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.categoryPage #itemthumbs .card a,
+.categoryPage .additionalLoadItems .card a {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .categoryPage #itemthumbs .card,
+  .categoryPage .additionalLoadItems .card {
+    width: calc(50% - 2rem / 2) !important;
+  }
+}
+
+@media (min-width: 950px) {
+  .categoryPage #itemthumbs .card,
+  .categoryPage .additionalLoadItems .card {
+    width: calc(33.3333% - 2rem * 2 / 3) !important;
+  }
+}
+
+@media (min-width: 950px) {
+  .categoryPage #itemthumbs .card:not(:nth-child(3n)),
+  .categoryPage .additionalLoadItems .card:not(:nth-child(3n)) {
+    margin-right: 2rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .categoryPage #itemthumbs .card:nth-child(2n),
+  .categoryPage .additionalLoadItems .card:nth-child(2n) {
+    margin-left: 2rem !important;
+  }
+}
+
+@media (min-width: 950px) {
+  .categoryPage #itemthumbs .card:nth-child(2n),
+  .categoryPage .additionalLoadItems .card:nth-child(2n) {
+    margin-left: 0 !important;
+  }
+}
+
+.categoryPage .rServiceText {
+  color: #96002d;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.custom .ex-basic-1.noItems {
+  padding-bottom: 0;
+}
+
+.custom .inquirySection .control-panel input#buttonLeave {
+  background-color: #96002D !important;
+  color: #fff !important;
+  -webkit-transition: 0.3s ease opacity;
+  transition: 0.3s ease opacity;
+}
+
+.custom .inquirySection .control-panel input#buttonLeave:hover {
+  opacity: 0.8 !important;
+  text-decoration: none !important;
+}
+
+.custom.navbarFixed .ex-form-1 {
+  padding-top: 4.75rem !important;
+}
+
+@media (min-width: 768px) {
+  .custom.navbarFixed .ex-form-1 {
+    padding-top: 6.6875rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom.navbarFixed .ex-form-1 {
+    padding-top: 7.125rem !important;
+  }
+}
+
+@media (min-width: 1100px) {
+  .custom.navbarFixed .ex-form-1 {
+    padding-top: 8.5rem !important;
+  }
+}
+
+.copyright {
+  padding: 2rem 0 4rem;
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    padding: 3rem 0 4rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .copyright {
+    padding: 3.3125rem 0 4.5rem;
+  }
+}
+
+.copyright-inner {
+  width: 1800px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media (max-width: 767px) {
+  .copyright-inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .copyright-inner {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .copyright-inner {
+    padding: 0 3.75rem;
+  }
+}
+
+.copyright-item {
+  display: block !important;
+  text-align: left;
+}
+
+.copyright-item:not(:last-child) {
+  margin-bottom: 1.625rem;
+}
+
+@media (max-width: 767px) {
+  .copyright-item:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.copyright-item a {
+  color: #fff !important;
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-size: 1.125rem !important;
+  letter-spacing: 0.03em;
+  -webkit-transition: 0.3s ease opacity;
+  transition: 0.3s ease opacity;
+}
+
+@media (max-width: 767px) {
+  .copyright-item a {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+}
+
+.copyright-item a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  .copyright-list {
+    margin-bottom: 3.5rem;
+    width: 100%;
+  }
+}
+
+.copyright-txt {
+  color: #fff;
+  font-size: 1.125rem;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 767px) {
+  .copyright-txt {
+    font-size: 0.875rem;
+    width: 100%;
+  }
+}
+
+.copyright .copyright-item .nav-link {
+  color: #fff !important;
+}
+
+.custom .breadcrumb-bar {
+  padding-top: 3.75rem !important;
+}
+
+@media (min-width: 768px) {
+  .custom .breadcrumb-bar {
+    padding-top: 5.6875rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom .breadcrumb-bar {
+    padding-top: 6.125rem !important;
+  }
+}
+
+@media (min-width: 1100px) {
+  .custom .breadcrumb-bar {
+    padding-top: 7.5rem !important;
+  }
+}
+
+.custom .relatedItems .card-image {
+  padding-top: 75.18%;
+  position: relative;
+  width: 100%;
+}
+
+.custom .relatedItems .card-image img {
+  display: block;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.custom .relatedItems .card a {
+  display: block;
+}
+
+.custom.navbarFixed .ex-basic-1.itemDetail {
+  padding-top: 5.75rem !important;
+}
+
+@media (min-width: 768px) {
+  .custom.navbarFixed .ex-basic-1.itemDetail {
+    padding-top: 7.6875rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom.navbarFixed .ex-basic-1.itemDetail {
+    padding-top: 8.125rem !important;
+  }
+}
+
+@media (min-width: 1100px) {
+  .custom.navbarFixed .ex-basic-1.itemDetail {
+    padding-top: 9.5rem !important;
+  }
+}
+
+.custom .photoThumbs a {
+  display: block;
+  padding-top: 75.18%;
+  position: relative;
+  width: 100%;
+}
+
+.custom .photoThumbs a img {
+  display: block;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.custom .nav-link {
+  color: #000000 !important;
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-size: 1rem;
+}
+
+@media (max-width: 991px) {
+  .custom .nav-link {
+    color: #fff !important;
+  }
+}
+
+@media (min-width: 1300px) {
+  .custom .nav-link {
+    font-size: 1.375rem;
+  }
+}
+
+.custom .nav-dropdown {
+  color: #fff !important;
+}
+
+.custom .nav-dropdown ul {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+}
+
+.custom .nav-dropdown .appsItemCategoryTag_child a {
+  color: #fff !important;
+  font-size: 1rem;
+}
+
+.custom .nav-dropdown .appsItemCategoryTag_lowerchild {
+  border-bottom: none;
+}
+
+@media (max-width: 767px) {
+  .custom .navbarWrap .container {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .custom .navbar-custom .appsItemCategoryTag_child a {
+    color: #fff !important;
+  }
+}
+
+.custom .navbar-custom .navbar-brand .logoText {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .custom .navbar-custom .navbar-brand .logoText {
+    color: #fff !important;
+  }
+}
+
+.custom .fa-navicon:before,
+.custom .fa-reorder:before,
+.custom .fa-bars:before {
+  color: #fff;
+}
+
+.custom .fa-remove:before,
+.custom .fa-close:before,
+.custom .fa-times:before {
+  color: #fff;
+}
+
+.custom #baseMenu > ul > li {
+  height: auto;
+}
+
+.custom #baseMenu > ul > li a {
+  height: 50px;
+  margin: 0;
+  text-align: center;
+  width: 48px;
+}
+
+.custom #baseMenu > ul > li a img {
+  height: 28px;
+  width: 27px;
+}
+
+.custom #baseMenu > ul > li.base {
+  margin: 0 20px 0 0;
+}
+
+@media (max-width: 767px) {
+  .custom #baseMenu > ul > li a {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .custom #baseMenu > ul > li a img {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .custom .navbar-custom .appsItemCategoryTag_lowerchild {
+    display: block !important;
+  }
+}
+
+.custom .navbar-custom .appsItemCategoryTag_lowerchild a {
+  -webkit-transition: 0.3s ease opacity;
+  transition: 0.3s ease opacity;
+}
+
+.custom .navbar-custom .appsItemCategoryTag_lowerchild a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 991px) {
+  .custom .nav-dropdown .appsItemCategoryTag_child > a {
+    display: none !important;
+  }
+}
+
+.custom .navbar-custom {
+  opacity: 1 !important;
+}
+
+.custom .navbar-custom .dropdown:hover > .dropdown-menu {
+  -webkit-animation: unset;
+          animation: unset;
+}
+
+@media (min-width: 992px) {
+  .custom .navbar-custom .dropdown:hover > .dropdown-menu {
+    -webkit-animation: fadeDropdown 0.2s;
+            animation: fadeDropdown 0.2s;
+  }
+}
+
+@media (max-width: 991px) {
+  .custom .navbar-custom .dropdown > .dropdown-menu {
+    display: none;
+  }
+}
+
+.noTop .navbarWrap .navbar-brand .logoText {
+  color: #fff !important;
+}
+
+@media (min-width: 768px) {
+  .noTop .navbarWrap .navbar-custom {
+    padding: 1.5rem 15px !important;
+  }
+}
+
+@media (min-width: 1100px) {
+  .noTop .navbarWrap .navbar-custom {
+    padding: 2.1875rem 0 !important;
+  }
+}
+
+.noTop .navbarWrap .navbar-custom .nav-item .nav-link {
+  color: #fff !important;
+}
+
+.frontpage .navbar-collapse {
+  -ms-flex-item-align: unset;
+      align-self: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchPage .ex-header {
+  padding-top: 5.75rem !important;
+}
+
+@media (min-width: 768px) {
+  .searchPage .ex-header {
+    padding-top: 7.6875rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .searchPage .ex-header {
+    padding-top: 8.125rem !important;
+  }
+}
+
+@media (min-width: 1100px) {
+  .searchPage .ex-header {
+    padding-top: 9.5rem !important;
+  }
+}
+
+.searchPage .card-image {
+  padding-top: 75.18%;
+  position: relative;
+  width: 100%;
+}
+
+.searchPage .card-image img {
+  display: block;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.searchPage #itemthumbs,
+.searchPage .additionalLoadItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.searchPage #itemthumbs .card,
+.searchPage .additionalLoadItems .card {
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.searchPage #itemthumbs .card a,
+.searchPage .additionalLoadItems .card a {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .searchPage #itemthumbs .card,
+  .searchPage .additionalLoadItems .card {
+    width: calc(50% - 2rem / 2) !important;
+  }
+}
+
+@media (min-width: 950px) {
+  .searchPage #itemthumbs .card,
+  .searchPage .additionalLoadItems .card {
+    width: calc(33.3333% - 2rem * 2 / 3) !important;
+  }
+}
+
+@media (min-width: 950px) {
+  .searchPage #itemthumbs .card:not(:nth-child(3n)),
+  .searchPage .additionalLoadItems .card:not(:nth-child(3n)) {
+    margin-right: 2rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .searchPage #itemthumbs .card:nth-child(2n),
+  .searchPage .additionalLoadItems .card:nth-child(2n) {
+    margin-left: 2rem !important;
+  }
+}
+
+@media (min-width: 950px) {
+  .searchPage #itemthumbs .card:nth-child(2n),
+  .searchPage .additionalLoadItems .card:nth-child(2n) {
+    margin-left: 0 !important;
+  }
+}
+
+.noTop .main .terms h2,
+.noTop .main .terms h3 {
+  font-weight: 600 !important;
+}
+
+.noTop .main .terms h2 {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.noTop .main .terms h2 a {
+  color: #444444 !important;
+  pointer-events: none;
+}
+
+.noTop .main .terms h3 {
+  margin: 5rem auto 3rem;
+}
+
+.noTop .main .terms h3:first-of-type {
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+}
+
+.noTop .main .terms span,
+.noTop .main .terms p {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+}
+
+@media (min-width: 768px) {
+  .noTop .main .terms .blog_contents {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+.frontpage.custom .header {
+  height: 100vh;
+  max-height: 667px;
+  min-height: unset;
+  position: relative;
+  overflow: unset;
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .header {
+    max-height: 800px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .frontpage.custom .header {
+    max-height: 1310px;
+  }
+}
+
+.frontpage.custom .header-container {
+  padding-top: min(26vh,175px);
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .header-container {
+    padding-left: 2.8rem;
+    padding-top: min(22vh,200px);
+  }
+}
+
+@media (min-width: 1100px) {
+  .frontpage.custom .header-container {
+    padding-top: min(15vh,330px);
+  }
+}
+
+.frontpage.custom .mvbt {
+  bottom: 0;
+  position: fixed;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .mvbt {
+    display: none;
+  }
+}
+
+.frontpage.custom .fv-tit {
+  margin-bottom: 30px;
+  max-width: 120px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .fv-tit {
+    margin: 0 auto 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .fv-tit {
+    max-width: min(24.5vh,220px);
+    margin-bottom: 20px;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1100px) {
+  .frontpage.custom .fv-tit {
+    max-width: min(24.5vh,320px);
+    margin-bottom: 30px;
+    padding-left: 2rem;
+  }
+}
+
+.frontpage.custom .fv-tit img {
+  max-width: 102px;
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .fv-tit img {
+    max-width: min(13.4vh,135px);
+  }
+}
+
+@media (min-width: 1100px) {
+  .frontpage.custom .fv-tit img {
+    max-width: min(13.4vh,175px);
+  }
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .fv-catch {
+    max-width: 150px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .frontpage.custom .fv-catch {
+    max-width: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .fv-catch {
+    max-width: min(24.5vh,220px);
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1100px) {
+  .frontpage.custom .fv-catch {
+    max-width: min(24.5vh,320px);
+    padding-left: 2rem;
+  }
+}
+
+.frontpage.custom .news {
+  margin-top: 7.5rem;
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .news {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .news {
+    margin-top: 5.625rem;
+  }
+}
+
+.frontpage.custom .news h2 {
+  font-weight: 600 !important;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.frontpage.custom .news .row {
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .news .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.frontpage.custom .news-special {
+  color: #96002d;
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .news-special br._sm {
+    display: none;
+  }
+}
+
+.frontpage.custom .news a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 25px;
+  text-decoration: none;
+  -webkit-transition: 0.3s opacity ease;
+  transition: 0.3s opacity ease;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .news a {
+    padding: 1.7rem 0;
+  }
+}
+
+.frontpage.custom .news a:hover {
+  opacity: 0.7;
+}
+
+.frontpage.custom .news time {
+  color: #333333;
+  font-family: kozuka-gothic-pr6n, sans-serif;
+  font-size: 1.125rem;
+  margin-right: 2rem;
+  text-align: left;
+  width: 95px;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .news time {
+    font-size: 1rem;
+  }
+}
+
+.frontpage.custom .news-list {
+  background: #fff9ed;
+  color: #444444;
+  margin: 3rem auto 0;
+  padding: 40px 30px;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .news-list {
+    margin: 1rem auto 0;
+    padding: 1.8rem;
+  }
+}
+
+.frontpage.custom .news-list li {
+  border-bottom: 1px solid #666666;
+}
+
+.frontpage.custom .news-list li:first-child {
+  border-top: 1px solid #666666;
+}
+
+.frontpage.custom .news-subtit {
+  color: #666666;
+  font-family: kozuka-gothic-pr6n, sans-serif !important;
+  text-align: left;
+  width: 80%;
+}
+
+.frontpage.custom .banner {
+  margin-top: 7.5rem;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .banner {
+    margin-top: 5.625rem;
+  }
+}
+
+.frontpage.custom .banner-link {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .banner._top {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .banner._pc {
+    margin-bottom: 7.5rem;
+  }
+}
+
+.frontpage.custom .delivery {
+  padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .delivery {
+    margin-top: 2rem;
+  }
+}
+
+.frontpage.custom .delivery-tit {
+  font-weight: 600 !important;
+}
+
+.frontpage.custom .about {
+  background: url(../img/shop/about.jpg) center/cover no-repeat;
+  padding: 10rem 0 6rem;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .about {
+    padding: 2.5rem 0;
+  }
+}
+
+.frontpage.custom .about h2 {
+  color: #fff;
+  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 1.35rem;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .about h2 {
+    font-size: 2.5rem;
+    letter-spacing: 0.06em;
+  }
+}
+
+@media (min-width: 900px) {
+  .frontpage.custom .about h2 {
+    font-size: 3rem;
+  }
+}
+
+.frontpage.custom .about p {
+  color: #fff;
+  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-size: 0.75rem;
+  line-height: 2;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .about p {
+    padding-bottom: 0;
+    padding-top: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .about p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .frontpage.custom .about p {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .about .heading-container {
+    margin-bottom: 0;
+  }
+}
+
+.frontpage.custom .introduction {
+  padding: 0 15px;
+}
+
+@media (min-width: 1300px) {
+  .frontpage.custom .introduction {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .introduction {
+    padding-bottom: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .introduction-mt {
+    margin-top: 7.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .introduction-mt .introduction-img {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .introduction-mt .introduction-box {
+    margin-bottom: 0;
+  }
+}
+
+.frontpage.custom .introduction-box {
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  .frontpage.custom .introduction-box {
+    margin-bottom: 1.8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .frontpage.custom .introduction-box._left {
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .frontpage.custom .introduction-box._right {
+    padding-left: 1.5rem;
+  }
+}
+
+.frontpage.custom .introduction-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 1300px) {
+  .frontpage.custom .introduction-head {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .introduction-head {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.frontpage.custom .introduction-tit {
+  color: #96002d;
+  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 1.625;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .introduction-tit {
+    font-size: 1.375rem;
+    letter-spacing: 0;
+    line-height: 1.45;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .introduction-tit {
+    margin-right: 1.5rem;
+    letter-spacing: 0.06em;
+  }
+}
+
+@media (min-width: 900px) {
+  .frontpage.custom .introduction-tit {
+    margin-right: 4.5rem;
+  }
+}
+
+.frontpage.custom .introduction-subtit {
+  color: #571127;
+  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-size: 1.5rem;
+  margin-bottom: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.1em !important;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .introduction-subtit {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.frontpage.custom .introduction-txt {
+  color: #444444;
+  line-height: 1.875;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .introduction-txt {
+    letter-spacing: 0.02em;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .introduction-img {
+    margin-top: -1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .introduction-img {
+    bottom: -20px;
+    position: absolute;
+    right: 15px;
+  }
+}
+
+.frontpage.custom .introduction-img img {
+  max-width: 72px;
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .introduction-img img {
+    max-width: 320px;
+  }
+}
+
+.frontpage.custom .introduction img {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .check {
+    margin-top: 9.375rem;
+  }
+}
+
+.frontpage.custom .check-list {
+  margin: 0 auto;
+  max-width: 1086px;
+}
+
+.frontpage.custom .check-head {
+  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 3.75rem auto 4.375rem;
+  line-height: 2;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .check-head {
+    display: none;
+  }
+}
+
+.frontpage.custom .check-tit {
+  margin: 0 auto;
+  max-width: 680px;
+}
+
+@media (min-width: 1300px) {
+  .frontpage.custom .check-tit {
+    max-width: 790px;
+  }
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .check-tit {
+    max-width: 375px;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.frontpage.custom .check-img {
+  background-color: #ffffff;
+  max-width: 500px;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .check-img {
+    margin-bottom: 2.5rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .check-img {
+    margin: -5.4rem auto 2.5rem;
+    width: 80%;
+  }
+}
+
+.frontpage.custom .check-img img {
+  max-width: 350px;
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .check-item {
+    border: 1px solid #444444;
+    padding: 4rem 1rem 3rem;
+  }
+}
+
+.frontpage.custom .check-item:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .check-wrap {
+    text-align: left;
+  }
+}
+
+.frontpage.custom .check-wrap label {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .check-wrap label {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .check-wrap label:nth-child(2) {
+    margin: 0 1rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .frontpage.custom .check-wrap label:nth-child(2) {
+    margin: 0 3.75rem;
+  }
+}
+
+.frontpage.custom .check-wrap label:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.frontpage.custom .check-txt {
+  color: #96002d;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  line-height: 2;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .check-txt {
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .check-txt {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .frontpage.custom .check-txt {
+    margin-top: 2rem;
+  }
+}
+
+.frontpage.custom .feature {
+  margin-top: 3.75rem;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .feature {
+    margin-bottom: 5.625rem;
+    margin-top: 5.625rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .feature #featuredItems {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .frontpage.custom .feature #ubusuna-featuredItems1 {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .feature #ubusuna-featuredItems1 {
+    margin-bottom: 3.75rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .feature-head {
+    margin-bottom: 0.8rem;
+  }
+}
+
+.frontpage.custom .feature-tit {
+  font-weight: 600 !important;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.frontpage.custom .feature-img {
+  padding-top: 82.75% !important;
+  position: relative;
+  width: 100%;
+}
+
+.frontpage.custom .feature-img img {
+  display: block;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.frontpage.custom .feature-body {
+  padding: 1.5rem 1rem;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .feature-body {
+    padding: 0 1rem;
+  }
+}
+
+.frontpage.custom .feature-subtit.item-title {
+  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-size: 1.5rem;
+  font-weight: 700 !important;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .feature-subtit.item-title {
+    font-size: 1.125rem;
+    margin: 1.5rem 0 !important;
+  }
+}
+
+.frontpage.custom .feature-link {
+  color: #ffffff !important;
+  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .feature-link {
+    font-size: 0.875rem;
+  }
+}
+
+.frontpage.custom .recommend {
+  margin-bottom: 7.5rem;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .recommend {
+    margin-bottom: 5rem;
+  }
+}
+
+.frontpage.custom .recommend-tit {
+  font-weight: 600 !important;
+}
+
+.frontpage.custom .recommend-box {
+  -webkit-box-flex: unset;
+      -ms-flex: unset;
+          flex: unset;
+  padding: 0;
+  width: calc(33.3333% - 2.8rem * 2 / 3);
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .recommend-box {
+    margin-bottom: 1.25rem;
+    width: calc(50% - 0.625rem / 2);
+  }
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .recommend-box:nth-of-type(even) {
+    margin-right: 0.625rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .recommend-box:nth-of-type(3), .frontpage.custom .recommend-box:nth-of-type(6) {
+    margin-left: 2.8rem;
+    margin-right: 2.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .recommend-box._mb {
+    margin-bottom: 3.5rem;
+  }
+}
+
+.frontpage.custom .recommend-box a {
+  display: block;
+}
+
+.frontpage.custom .recommend-name {
+  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 2rem auto 0.5rem;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .recommend-name {
+    font-size: 0.625rem;
+    margin: 0.6rem auto 0.3rem;
+  }
+}
+
+.frontpage.custom .recommend-price {
+  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-size: 1.125rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .recommend-price {
+    font-size: 0.75rem;
+    line-height: 1;
+  }
+}
+
+.frontpage.custom .recommend-hwrap {
+  padding: 0;
+}
+
+.frontpage.custom .recommend-row {
+  padding: 0 15px;
+}
+
+.frontpage.custom .recommend-row:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.frontpage.custom .recommend-head {
+  background: #96002d;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .recommend-head {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+  }
+}
+
+.frontpage.custom .recommend-subtit {
+  color: #fff;
+  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .recommend-subtit {
+    font-size: 1.5rem;
+  }
+}
+
+.frontpage.custom .recommend-img {
+  padding-top: 82.75% !important;
+  position: relative;
+}
+
+.frontpage.custom .recommend-img img {
+  display: block;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+
+.frontpage.custom .recommend .heading-container {
+  text-align: center;
+}
+
+.frontpage.custom .testimonial {
+  margin-bottom: 7.5rem;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .testimonial {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .testimonial-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .testimonial-card {
+    width: calc(33.3333% - 1rem * 2 / 3);
+  }
+}
+
+@media (min-width: 900px) {
+  .frontpage.custom .testimonial-card {
+    width: calc(33.3333% - 2rem * 2 / 3);
+  }
+}
+
+@media (min-width: 1300px) {
+  .frontpage.custom .testimonial-card {
+    width: calc(33.3333% - 5rem * 2 / 3);
+  }
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .testimonial-card:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .testimonial-card:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .frontpage.custom .testimonial-card:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .frontpage.custom .testimonial-card:not(:last-child) {
+    margin-right: 5rem;
+  }
+}
+
+.frontpage.custom .testimonial-card img {
+  border-radius: 50%;
+  display: block;
+  height: 108px;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 108px;
+}
+
+.frontpage.custom .testimonial-head {
+  margin-bottom: 2rem;
+}
+
+.frontpage.custom .testimonial-tit {
+  font-weight: 600 !important;
+  padding-bottom: 0;
+}
+
+.frontpage.custom .testimonial-text {
+  font-size: 1rem;
+  margin: 0 auto 0.6rem;
+  max-width: 256px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .testimonial-text {
+    font-size: 0.875rem;
+    max-width: 265px;
+    line-height: 1.7;
+    text-align: center;
+  }
+}
+
+.frontpage.custom .testimonial-author {
+  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.frontpage.custom .appearedmedia {
+  margin-bottom: 10rem;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .appearedmedia {
+    margin-bottom: 3.2rem;
+  }
+}
+
+.frontpage.custom .appearedmedia-tit {
+  font-weight: 600 !important;
+}
+
+.frontpage.custom .appearedmedia-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem auto 0;
+  max-width: 1000px;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .appearedmedia-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 15px;
+  }
+}
+
+.frontpage.custom .appearedmedia-box {
+  width: calc(50% - 2.8rem / 2);
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .appearedmedia-box {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .appearedmedia-box:first-child {
+    margin-right: 2.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .appearedmedia-box:first-child {
+    margin-bottom: 3.65rem;
+  }
+}
+
+.frontpage.custom .appearedmedia-box a {
+  display: block;
+}
+
+.frontpage.custom .appearedmedia-img img {
+  margin: 0;
+  width: 100%;
+}
+
+.frontpage.custom .appearedmedia-txt {
+  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-size: 1.125rem;
+  font-weight: 700 !important;
+  margin-top: 2.2rem;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .appearedmedia-txt {
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+  }
+}
+
+.frontpage.custom .benefits {
+  background-color: #f6f7f7;
+  padding: 5.3rem 0 7.5rem;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .benefits {
+    padding: 5rem 0 5.625rem;
+  }
+}
+
+.frontpage.custom .benefits-tit {
+  font-weight: 600 !important;
+}
+
+.frontpage.custom .benefits-head {
+  margin-top: 2rem;
+  line-height: 1.875;
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .benefits-head {
+    letter-spacing: 0.1em;
+  }
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .benefits-head {
+    margin-bottom: 3.75rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0;
+    text-align: left;
+  }
+}
+
+.frontpage.custom .benefits-box {
+  background: #fff;
+  padding: 3rem 1.5rem;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 50px;
+  width: calc(50% - 2.8rem / 2);
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .benefits-box {
+    border-radius: 10px;
+    padding: 1.8rem 1.5rem 3rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .benefits-box:first-child {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .benefits-box:first-child {
+    margin-right: 2.8rem;
+  }
+}
+
+.frontpage.custom .benefits-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .benefits-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.frontpage.custom .benefits-txt {
+  font-weight: 700;
+  margin: 0 auto;
+  max-width: 462px;
+  letter-spacing: 0.1em;
+  line-height: 2;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .benefits-txt {
+    font-size: 1.125rem;
+    letter-spacing: 0.05em;
+    line-height: 1.6667;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .benefits-txt {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .frontpage.custom .benefits-txt {
+    font-size: 1.5rem;
+  }
+}
+
+.frontpage.custom .benefits-icon .fa {
+  font-size: 5.5rem;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .benefits-icon .fa {
+    font-size: 3.5rem;
+  }
+}
+
+.frontpage.custom .split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 7.5rem;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .split {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 5.625rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .split .area-1 {
+    height: auto;
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .split .area-1 {
+    width: 100%;
+  }
+}
+
+.frontpage.custom .split .area-2 {
+  padding-top: 5.625rem;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .split .area-2 {
+    padding-bottom: 5.625rem;
+    padding-top: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .split-container {
+    margin-right: 2rem;
+    max-width: 520px;
+  }
+}
+
+.frontpage.custom .split-tit {
+  font-size: 1.75rem;
+  font-weight: 600 !important;
+  margin-bottom: 2.8rem;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .split-tit {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.frontpage.custom .split-txt {
+  font-size: 1.125rem;
+  letter-spacing: 0.03em;
+  line-height: 2.66;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .split-txt {
+    font-size: 1rem;
+    line-height: 1.875;
+  }
+}
+
+.frontpage.custom .faq {
+  background-color: #f6f7f7;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .faq {
+    padding: 5.625rem 0 3.75rem;
+  }
+}
+
+.frontpage.custom .faq-container {
+  padding: 4.75rem 5.25rem 3rem;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .faq-container {
+    padding: 1rem 1rem;
+  }
+}
+
+.frontpage.custom .faq-tit {
+  font-weight: 600 !important;
+}
+
+.frontpage.custom .faq-subtit {
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 0.8rem 3rem;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .faq-subtit {
+    font-size: 1.1rem;
+  }
+}
+
+.frontpage.custom .faq-subtit::before {
+  font-size: 3rem;
+  top: 3px;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .faq-subtit::before {
+    top: -2px;
+  }
+}
+
+.frontpage.custom .faq-txt {
+  color: #444444;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .faq-txt {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.frontpage.custom .faq-txt:last-child {
+  margin-bottom: 0;
+}
+
+.frontpage.custom .container {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media (max-width: 1000px) {
+  .frontpage.custom .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 850px;
+  }
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .frontpage.custom .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }

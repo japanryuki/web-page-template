@@ -1,0 +1,60 @@
+.custom {
+    .relatedItems {
+        .card-image {
+            padding-top: 75.18%;
+            position: relative;
+            width: 100%;
+
+            img {
+                display: block;
+                left: 0;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+        }
+        .card {
+            a {
+                display: block;
+            }
+        }
+    }
+
+    &.navbarFixed .ex-basic-1.itemDetail {
+        padding-top: 5.75rem !important;
+
+        @include mq("md") {
+            padding-top: 7.6875rem !important;
+        }
+
+        @include mqFree("992px") {
+            padding-top: 8.125rem !important;
+        }
+
+        @include mqFree("1100px") {
+            padding-top: 9.5rem !important;
+        }
+    }
+
+    .photoThumbs {
+        a {
+            display: block;
+
+            padding-top: 75.18%;
+            position: relative;
+            width: 100%;
+
+            img {
+                display: block;
+                left: 0;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+        }
+    }
+}

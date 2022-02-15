@@ -3,10 +3,19 @@
 // layer
 $layer: ();
 
+@font-face {
+    font-family: "Hannari";
+    src: url("https://cdn.leafscape.be/hannari/hannari_web.woff2") format("woff2");
+    font-display: swap;
+}
+
 // font
-$font-family-default: "游ゴシック体", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro",
-    "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
-$font-family-base: $font-family-default;
+$font-family-default: "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic",
+    arial, helvetica, sans-serif;
+$font-family-base: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho",
+    "HiraMinProN-W3", "HiraMinProN-W6", $font-family-default;
+$font-family-min: "Hannari", $font-family-default;
+$font-family-nt: "noto-sans-cjk-jp", $font-family-default;
 
 // break point
 $breakpoints: (

@@ -1,0 +1,31 @@
+.custom{
+  .inquirySection .control-panel input#buttonLeave{
+    background-color: #96002D !important;
+    color: #fff !important;
+
+     transition: 0.3s ease opacity;
+
+    &:hover {
+        opacity: 0.8 !important;
+        text-decoration: none !important;
+    }
+  }
+
+  &.navbarFixed{
+    .ex-form-1{
+        padding-top: 4.75rem !important;
+
+        @include mq("md"){
+          padding-top: 6.6875rem !important;
+        }
+
+        @include mqFree("992px"){
+          padding-top: 7.125rem !important;
+        }
+        
+        @include mqFree("1100px"){
+          padding-top: 8.5rem !important;
+        }
+    }
+  }
+}

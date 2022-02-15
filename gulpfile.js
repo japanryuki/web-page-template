@@ -19,7 +19,7 @@ const source = require("vinyl-source-stream");
 function scss() {
     return gulp.watch("scss/**/*.scss", function () {
         return gulp
-            .src("scss/custom.scss")
+            .src("scss/style.scss")
             .pipe(sassGlob())
             .pipe(
                 sass({
@@ -47,17 +47,3 @@ function js() {
 }
 
 exports.js = js;
-
-function htmlcopy() {
-    return gulp.src("./index.html").pipe(gulp.dest("./dist"));
-}
-
-function jsbuild() {
-    return gulp.src("./js/bundle.js").pipe(uglify()).pipe(gulp.dest("./dist/js"));
-}
-
-function cssbuild() {
-    return gulp.src("./css/bundle.css").pipe(cleancss()).pipe(gulp.dest("./dist/css"));
-}
-
-exports.build = gulp.series(jsbuild, cssbuild, htmlcopy, imgmin);

@@ -1,0 +1,72 @@
+.searchPage {
+    .ex-header {
+        padding-top: 5.75rem !important;
+
+        @include mq("md") {
+            padding-top: 7.6875rem !important;
+        }
+
+        @include mqFree("992px") {
+            padding-top: 8.125rem !important;
+        }
+
+        @include mqFree("1100px") {
+            padding-top: 9.5rem !important;
+        }
+    }
+
+    .card-image {
+        padding-top: 75.18%;
+        position: relative;
+        width: 100%;
+
+        img {
+            display: block;
+            left: 0;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+
+    #itemthumbs,
+    .additionalLoadItems {
+        display: flex;
+        flex-wrap: wrap;
+        .card {
+            a {
+                display: block;
+            }
+
+            width: 100% !important;
+
+            @include mq("md") {
+                width: calc(50% - 2rem / 2) !important;
+            }
+
+            @include mqFree("950px") {
+                width: calc(33.3333% - 2rem * 2 / 3) !important;
+            }
+
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+
+            &:not(:nth-child(3n)) {
+                @include mqFree("950px") {
+                    margin-right: 2rem !important;
+                }
+            }
+
+            &:nth-child(2n) {
+                @include mq("md") {
+                    margin-left: 2rem !important;
+                }
+                @include mqFree("950px") {
+                    margin-left: 0 !important;
+                }
+            }
+        }
+    }
+}
