@@ -73,7 +73,7 @@ h2 {
 .u-checkbox + span {
   cursor: pointer;
   font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
-  font-size: 1.375rem;
+  font-size: 1.1rem;
   font-weight: 400;
   position: relative;
 }
@@ -86,14 +86,7 @@ h2 {
 
 @media (min-width: 768px) {
   .u-checkbox + span {
-    font-size: 1.2rem;
     padding-left: 2.5rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .u-checkbox + span {
-    font-size: 1.3125rem;
   }
 }
 
@@ -103,7 +96,7 @@ h2 {
   border-radius: 3px;
   content: "";
   display: block;
-  height: 28px;
+  height: 20px;
   left: 0;
   position: absolute;
   top: 55%;
@@ -111,13 +104,13 @@ h2 {
   transition: background 0.3s ease;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 28px;
+  width: 20px;
 }
 
 @media (max-width: 767px) {
   .u-checkbox + span::before {
-    height: 23px;
-    width: 23px;
+    height: 20px;
+    width: 20px;
   }
 }
 
@@ -126,7 +119,7 @@ h2 {
   border-left: 3px solid #ffffff;
   content: "";
   display: block;
-  height: 13px;
+  height: 8px;
   left: 4px;
   opacity: 0;
   position: absolute;
@@ -135,14 +128,7 @@ h2 {
           transform: translateY(-50%) rotate(-45deg);
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  width: 20px;
-}
-
-@media (max-width: 767px) {
-  .u-checkbox + span::after {
-    height: 10px;
-    width: 16px;
-  }
+  width: 13px;
 }
 
 .u-checkbox:checked + span::after {
@@ -207,7 +193,7 @@ h2 {
 
 @media (max-width: 767px) {
   .custom a.back-to-top.frontPage {
-    bottom: 4.5rem;
+    bottom: 18vw;
   }
 }
 
@@ -1577,7 +1563,7 @@ h2 {
 }
 
 .copyright {
-  padding: 2rem 0 4rem;
+  padding: 2rem 0 20vw;
 }
 
 @media (min-width: 768px) {
@@ -1684,6 +1670,40 @@ h2 {
 
 .copyright .copyright-item .nav-link {
   color: #fff !important;
+}
+
+.mail-magazine {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.mail-magazine__tit {
+  color: #fff;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.mail-magazine .mailMagazineSubscribe_input {
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.4rem;
+  -webkit-appearance: none;
+}
+
+.mail-magazine .mailMagazineSubscribe_submit {
+  background-color: #96002d !important;
+  color: #fff !important;
+  cursor: pointer;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.25rem 0.8rem;
+  -webkit-appearance: none;
+}
+
+.mail-magazine .mailMagazineSubscribe_confirm {
+  color: #fff;
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
 }
 
 .custom .breadcrumb-bar {
@@ -2113,6 +2133,8 @@ h2 {
 
 .frontpage.custom .mvbt {
   bottom: 0;
+  left: 0;
+  right: 0;
   position: fixed;
   z-index: 10;
 }
@@ -2317,6 +2339,15 @@ h2 {
 
 .frontpage.custom .banner-link {
   display: block;
+  margin: 0 auto;
+  max-width: 950px;
+  width: 90%;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .banner-link {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2356,6 +2387,25 @@ h2 {
   }
 }
 
+@media (max-width: 500px) {
+  .frontpage.custom .about .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.frontpage.custom .about .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (max-width: 500px) {
+  .frontpage.custom .about .col-lg-12 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
 .frontpage.custom .about h2 {
   color: #fff;
   font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
@@ -2381,7 +2431,7 @@ h2 {
 .frontpage.custom .about p {
   color: #fff;
   font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
-  font-size: 0.75rem;
+  font-size: .85rem;
   line-height: 2;
 }
 
@@ -2401,6 +2451,12 @@ h2 {
 @media (min-width: 900px) {
   .frontpage.custom .about p {
     font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .frontpage.custom .about p br._sm {
+    display: none;
   }
 }
 
@@ -2539,6 +2595,12 @@ h2 {
   letter-spacing: 0.1em;
 }
 
+@media (min-width: 768px) {
+  .frontpage.custom .introduction-txt {
+    font-size: 1.125rem;
+  }
+}
+
 @media (max-width: 767px) {
   .frontpage.custom .introduction-txt {
     letter-spacing: 0.02em;
@@ -2581,12 +2643,19 @@ h2 {
 
 .frontpage.custom .check-list {
   margin: 0 auto;
-  max-width: 1086px;
+  max-width: 750px;
+  width: 90%;
+}
+
+@media (min-width: 1000px) {
+  .frontpage.custom .check-list {
+    width: 75%;
+  }
 }
 
 .frontpage.custom .check-head {
   font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   font-weight: 700;
   margin: 3.75rem auto 4.375rem;
   line-height: 2;
@@ -2600,12 +2669,13 @@ h2 {
 
 .frontpage.custom .check-tit {
   margin: 0 auto;
-  max-width: 680px;
+  max-width: 525px;
+  width: 75%;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
   .frontpage.custom .check-tit {
-    max-width: 790px;
+    width: 55%;
   }
 }
 
@@ -2615,6 +2685,7 @@ h2 {
     margin-bottom: 2.5rem;
     margin-left: auto;
     margin-right: auto;
+    width: 90%;
   }
 }
 
@@ -2625,26 +2696,32 @@ h2 {
 
 @media (max-width: 767px) {
   .frontpage.custom .check-img {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     text-align: left;
   }
 }
 
 @media (min-width: 768px) {
   .frontpage.custom .check-img {
-    margin: -5.4rem auto 2.5rem;
-    width: 80%;
+    margin: -4.4rem auto 1.5rem;
+    width: 50%;
   }
 }
 
 .frontpage.custom .check-img img {
-  max-width: 350px;
+  max-width: 280px;
+}
+
+@media (max-width: 767px) {
+  .frontpage.custom .check-img img {
+    max-width: 250px;
+  }
 }
 
 @media (min-width: 768px) {
   .frontpage.custom .check-item {
     border: 1px solid #444444;
-    padding: 4rem 1rem 3rem;
+    padding: 3rem 1rem 2.2rem;
   }
 }
 
@@ -2686,9 +2763,9 @@ h2 {
 
 .frontpage.custom .check-txt {
   color: #96002d;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: 1rem;
   line-height: 2;
 }
 
@@ -2697,18 +2774,6 @@ h2 {
     letter-spacing: 0.02em;
     line-height: 1.5;
     text-align: left;
-  }
-}
-
-@media (min-width: 768px) {
-  .frontpage.custom .check-txt {
-    margin-top: 1rem;
-  }
-}
-
-@media (min-width: 900px) {
-  .frontpage.custom .check-txt {
-    margin-top: 2rem;
   }
 }
 
