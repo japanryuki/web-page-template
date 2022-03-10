@@ -1,17 +1,51 @@
 .custom {
-  .breadcrumb-bar {
-      padding-top: 3.75rem !important;
+    .breadcrumb-bar {
+        padding-top: 3.75rem !important;
 
-    @include mq("md"){
-      padding-top: 5.6875rem !important;
+        @include mq("md") {
+            padding-top: 5.6875rem !important;
+        }
+
+        @include mqFree("992px") {
+            padding-top: 6.125rem !important;
+        }
+
+        @include mqFree("1100px") {
+            padding-top: 7.5rem !important;
+        }
     }
 
-    @include mqFree("992px"){
-      padding-top: 6.125rem !important;
+    h1.top-mv-tit {
+        font-family: $font-family-min;
+        font-size: unquote(" min(10vh, 82px)");
+        margin-left: auto;
+        margin-right: 2rem;
+        line-height: 1.3;
+        text-align: left;
+        writing-mode: vertical-rl;
+        white-space: nowrap;
+
+        @include mq("sm") {
+            font-size: 9vw;
+            margin-right: auto;
+        }
+        @include mqFreeMax("500px") {
+            font-size: 12vw;
+            margin-right: auto;
+        }
+        span {
+            position: relative;
+            right: unquote(" max(-7vh, -59px)");
+            top: unquote(" max(-6vh, -47px)");
+
+            @include mq("sm") {
+                right: -5vw;
+                top: -5vw;
+            }
+            @include mqFreeMax("500px") {
+                right: -7vw;
+                top: -6vw;
+            }
+        }
     }
-    
-    @include mqFree("1100px"){
-      padding-top: 7.5rem !important;
-    }
-  }
 }

@@ -158,3 +158,20 @@
     align-self: unset;
     align-items: center;
 }
+
+.custom .navbar-custom .navbar-brand .logoText {
+    display: none;
+}
+
+.frontpage .navbar-custom .navbar-brand img {
+    max-height: unset !important;
+    max-width: 80px !important;
+
+    @include mqFreeMax("1000px") {
+        max-width: 50px !important;
+    }
+
+    @include mq("sm") {
+        max-width: 40px !important;
+    }
+}
