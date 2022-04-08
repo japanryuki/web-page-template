@@ -54,15 +54,15 @@ html {
 body {
   font-size: 1rem;
   line-height: 1.7rem;
-  font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-family: sans-serif;
 }
 
 p {
-  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "Noto Serif JP", sans-serif !important;
 }
 
 h2 {
-  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "Noto Serif JP", sans-serif !important;
 }
 
 .u-checkbox {
@@ -72,7 +72,7 @@ h2 {
 
 .u-checkbox + span {
   cursor: pointer;
-  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-family: "noto-sans-cjk-jp", sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
   position: relative;
@@ -225,7 +225,7 @@ h2 {
 }
 
 .aboutPage .c-text {
-  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "noto-sans-cjk-jp", sans-serif !important;
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.02em;
@@ -240,7 +240,7 @@ h2 {
 
 .aboutPage .c-title {
   font-size: 24px;
-  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "Hannari", sans-serif !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -367,7 +367,7 @@ h2 {
 .aboutPage .p-concept__subtitle {
   color: #96002d;
   font-weight: 400 !important;
-  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "Hannari", sans-serif !important;
   font-size: 22px;
   text-align: center;
   margin-top: 33px;
@@ -648,7 +648,7 @@ h2 {
   font-weight: 400 !important;
   text-align: center;
   font-size: 28px;
-  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "Hannari", sans-serif !important;
   line-height: 1.3;
 }
 
@@ -772,7 +772,7 @@ h2 {
 .aboutPage .p-food__subtitle {
   color: #96002d;
   font-size: 28px;
-  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "Hannari", sans-serif !important;
   font-weight: 400 !important;
   margin-bottom: 2rem;
   text-align: center;
@@ -842,7 +842,7 @@ h2 {
 .aboutPage .p-member__subtitle {
   text-align: center;
   font-size: 22px;
-  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "Hannari", sans-serif !important;
   line-height: 1.4;
 }
 
@@ -972,7 +972,7 @@ h2 {
 
 .aboutPage .p-service__subtitle {
   font-size: 28px;
-  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "Hannari", sans-serif !important;
 }
 
 @media (max-width: 767px) {
@@ -1041,7 +1041,7 @@ h2 {
 
 .aboutPage .p-shop__sutitle {
   text-align: center;
-  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "Hannari", sans-serif !important;
   font-size: 28px;
   font-weight: bold;
   margin-top: 1.6rem;
@@ -1107,7 +1107,7 @@ h2 {
 }
 
 .aboutPage .p-shop__tel {
-  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "noto-sans-cjk-jp", sans-serif !important;
   font-size: 14px;
   padding: 0 20px;
   margin-top: 30px;
@@ -1155,13 +1155,13 @@ h2 {
 }
 
 .aboutPage .p-shop__info-row dt {
-  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "noto-sans-cjk-jp", sans-serif !important;
   font-weight: 400;
   width: 4em;
 }
 
 .aboutPage .p-shop__info-row dd {
-  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "noto-sans-cjk-jp", sans-serif !important;
   margin-left: 20px;
   width: calc(100% - 4em - 20px);
 }
@@ -1221,7 +1221,7 @@ h2 {
 
 .aboutPage .p-top__text {
   font-size: 20px;
-  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "Hannari", sans-serif !important;
   text-align: center;
   line-height: 1.5;
   margin-top: 34px;
@@ -1364,7 +1364,7 @@ h2 {
   border: 1px solid #96002d;
   color: #96002d;
   display: block;
-  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-family: "noto-sans-cjk-jp", sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
   max-width: 266px;
@@ -1697,7 +1697,7 @@ h2 {
 
 .copyright-item a {
   color: #fff !important;
-  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "Noto Serif JP", sans-serif !important;
   font-size: 1.125rem !important;
   letter-spacing: 0.03em;
   -webkit-transition: 0.3s ease opacity;
@@ -1770,7 +1770,7 @@ h2 {
 
 .mail-magazine .mailMagazineSubscribe_confirm {
   color: #fff;
-  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-family: "Noto Serif JP", sans-serif;
 }
 
 .custom .breadcrumb-bar {
@@ -1796,7 +1796,7 @@ h2 {
 }
 
 .custom h1.top-mv-tit {
-  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-family: "Hannari", sans-serif;
   font-size:  min(10vh, 82px);
   margin-left: auto;
   margin-right: 2rem;
@@ -1903,9 +1903,14 @@ h2 {
   width: 100%;
 }
 
+.custom #appsItemDetailCustom #appsItemDetailCustomTag p.appsItemDetailCustomTag_description {
+  font-size: .95rem;
+  line-height: 1.7em;
+}
+
 .custom .nav-link {
   color: #000000 !important;
-  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "Noto Serif JP", sans-serif !important;
   font-size: 1rem;
 }
 
@@ -1926,7 +1931,7 @@ h2 {
 }
 
 .custom .nav-dropdown ul {
-  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "Noto Serif JP", sans-serif !important;
 }
 
 .custom .nav-dropdown .appsItemCategoryTag_child a {
@@ -1951,7 +1956,7 @@ h2 {
 }
 
 .custom .navbar-custom .navbar-brand .logoText {
-  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-family: "Noto Serif JP", sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -2055,18 +2060,34 @@ h2 {
 
 @media (min-width: 768px) {
   .noTop .navbarWrap .navbar-custom {
-    padding: 1.5rem 15px !important;
+    padding: 0.5rem 15px !important;
   }
 }
 
 @media (min-width: 1100px) {
   .noTop .navbarWrap .navbar-custom {
-    padding: 2.1875rem 0 !important;
+    padding: 0.5rem 0 !important;
   }
 }
 
 .noTop .navbarWrap .navbar-custom .nav-item .nav-link {
   color: #fff !important;
+}
+
+.noTop .navbar-custom .navbar-brand img {
+  max-width: 60px !important;
+}
+
+@media (max-width: 1000px) {
+  .noTop .navbar-custom .navbar-brand img {
+    max-width: 50px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .noTop .navbar-custom .navbar-brand img {
+    max-width: 40px !important;
+  }
 }
 
 .frontpage .navbar-collapse {
@@ -2081,19 +2102,19 @@ h2 {
   display: none;
 }
 
-.frontpage .navbar-custom .navbar-brand img {
+.navbar-custom .navbar-brand img {
   max-height: unset !important;
   max-width: 80px !important;
 }
 
 @media (max-width: 1000px) {
-  .frontpage .navbar-custom .navbar-brand img {
+  .navbar-custom .navbar-brand img {
     max-width: 50px !important;
   }
 }
 
 @media (max-width: 767px) {
-  .frontpage .navbar-custom .navbar-brand img {
+  .navbar-custom .navbar-brand img {
     max-width: 40px !important;
   }
 }
@@ -2193,6 +2214,14 @@ h2 {
   }
 }
 
+.custom header .swiper-container {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 .noTop .main .terms h2,
 .noTop .main .terms h3 {
   font-weight: 600 !important;
@@ -2219,7 +2248,7 @@ h2 {
 
 .noTop .main .terms span,
 .noTop .main .terms p {
-  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "HiraMinProN-W3", "HiraMinProN-W6", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "Noto Serif JP", sans-serif !important;
 }
 
 @media (min-width: 768px) {
@@ -2230,6 +2259,7 @@ h2 {
 }
 
 .frontpage.custom .header {
+  background: unset !important;
   height: 100vh;
   max-height: 667px;
   min-height: unset;
@@ -2250,7 +2280,10 @@ h2 {
 }
 
 .frontpage.custom .header-container {
+  height: 100%;
   padding-top: min(26vh,175px);
+  position: relative;
+  z-index: 2;
 }
 
 @media (min-width: 768px) {
@@ -2547,7 +2580,7 @@ h2 {
 
 .frontpage.custom .about h2 {
   color: #fff;
-  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "Hannari", sans-serif !important;
   font-weight: 400 !important;
   font-size: 1.35rem;
   letter-spacing: 0;
@@ -2569,7 +2602,7 @@ h2 {
 
 .frontpage.custom .about p {
   color: #fff;
-  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "Hannari", sans-serif !important;
   font-size: 0.85rem;
   line-height: 2;
 }
@@ -2686,7 +2719,7 @@ h2 {
 
 .frontpage.custom .introduction-tit {
   color: #96002d;
-  font-family: "Hannari", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "Hannari", sans-serif !important;
   font-weight: 400 !important;
   line-height: 1.625;
   text-align: left;
@@ -2715,7 +2748,7 @@ h2 {
 
 .frontpage.custom .introduction-subtit {
   color: #571127;
-  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "noto-sans-cjk-jp", sans-serif !important;
   font-size: 1.5rem;
   margin-bottom: 1.8rem;
   line-height: 1.5;
@@ -2793,7 +2826,7 @@ h2 {
 }
 
 .frontpage.custom .check-head {
-  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "noto-sans-cjk-jp", sans-serif !important;
   font-size: 1.1rem;
   font-weight: 700;
   margin: 3.75rem auto 4.375rem;
@@ -2986,7 +3019,7 @@ h2 {
 }
 
 .frontpage.custom .feature-subtit.item-title {
-  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "noto-sans-cjk-jp", sans-serif !important;
   font-size: 1.5rem;
   font-weight: 700 !important;
 }
@@ -3000,7 +3033,7 @@ h2 {
 
 .frontpage.custom .feature-link {
   color: #ffffff !important;
-  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-family: "noto-sans-cjk-jp", sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
   margin-top: 0;
@@ -3065,7 +3098,7 @@ h2 {
 }
 
 .frontpage.custom .recommend-name {
-  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-family: "noto-sans-cjk-jp", sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
   margin: 2rem auto 0.5rem;
@@ -3080,7 +3113,7 @@ h2 {
 }
 
 .frontpage.custom .recommend-price {
-  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "noto-sans-cjk-jp", sans-serif !important;
   font-size: 1.125rem;
   letter-spacing: 0.1em;
   text-align: center;
@@ -3123,7 +3156,7 @@ h2 {
   border-bottom: 2px solid #96002d;
   color: #000;
   display: inline-block;
-  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-family: "noto-sans-cjk-jp", sans-serif;
   font-size: 1.75rem;
   padding: 0 4rem 1rem;
 }
@@ -3252,7 +3285,7 @@ h2 {
 }
 
 .frontpage.custom .testimonial-author {
-  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "noto-sans-cjk-jp", sans-serif !important;
   font-size: 0.875rem;
   letter-spacing: 0.1em;
   text-align: center;
@@ -3321,7 +3354,7 @@ h2 {
 }
 
 .frontpage.custom .appearedmedia-txt {
-  font-family: "noto-sans-cjk-jp", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+  font-family: "noto-sans-cjk-jp", sans-serif !important;
   font-size: 1.125rem;
   font-weight: 700 !important;
   margin-top: 2.2rem;

@@ -10,10 +10,8 @@ $layer: ();
 }
 
 // font
-$font-family-default: "Hiragino Sans", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic",
-    arial, helvetica, sans-serif;
-$font-family-base: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", "MS Mincho",
-    "HiraMinProN-W3", "HiraMinProN-W6", $font-family-default;
+$font-family-default: sans-serif;
+$font-family-base: "Noto Serif JP",$font-family-default;
 $font-family-min: "Hannari", $font-family-default;
 $font-family-nt: "noto-sans-cjk-jp", $font-family-default;
 

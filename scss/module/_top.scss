@@ -1,1134 +1,1138 @@
 .frontpage.custom {
-    .header {
-        height: 100vh;
-        max-height: 667px;
-        min-height: unset;
-        position: relative;
-        overflow: unset;
+  .header {
+    background: unset !important;
+    height: 100vh;
+    max-height: 667px;
+    min-height: unset;
+    position: relative;
+    overflow: unset;
 
+    @include mq("md") {
+      max-height: 800px;
+    }
+
+    @include mqFree("1100px") {
+      max-height: 1310px;
+    }
+
+    &-container {
+      height: 100%;
+      padding-top: unquote("min(26vh,175px)");
+      position: relative;
+      z-index: 2;
+
+      @include mq("md") {
+        padding-left: 2.8rem;
+        padding-top: unquote("min(22vh,200px)");
+      }
+
+      @include mqFree("1100px") {
+        padding-top: unquote("min(15vh,330px)");
+      }
+    }
+  }
+
+  .mvbt {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 10;
+    @include mq("md") {
+      display: none;
+    }
+  }
+
+  .fv {
+    &-tit {
+      margin-bottom: 30px;
+      max-width: 120px;
+      text-align: center;
+
+      @include mq("sm") {
+        margin: 0 auto 30px;
+      }
+
+      @include mq("md") {
+        max-width: unquote("min(24.5vh,220px)");
+        margin-bottom: 20px;
+        padding-left: 0;
+      }
+      @include mqFree("1100px") {
+        max-width: unquote("min(24.5vh,320px)");
+        margin-bottom: 30px;
+        padding-left: 2rem;
+      }
+
+      img {
+        max-width: 102px;
         @include mq("md") {
-            max-height: 800px;
+          max-width: unquote("min(13.4vh,135px)");
         }
 
         @include mqFree("1100px") {
-            max-height: 1310px;
+          max-width: unquote("min(13.4vh,175px)");
         }
-
-        &-container {
-            padding-top: unquote("min(26vh,175px)");
-
-            @include mq("md") {
-                padding-left: 2.8rem;
-                padding-top: unquote("min(22vh,200px)");
-            }
-
-            @include mqFree("1100px") {
-                padding-top: unquote("min(15vh,330px)");
-            }
-        }
+      }
     }
 
-    .mvbt {
-        bottom: 0;
-        left: 0;
-        right: 0;
-        position: fixed;
-        z-index: 10;
+    &-catch {
+      @include mq("sm") {
+        max-width: 150px;
+        margin: 0 auto;
+      }
+      @include mqFreeMax("500px") {
+        max-width: 120px;
+      }
+      @include mq("md") {
+        max-width: unquote("min(24.5vh,220px)");
+        padding-left: 0;
+      }
+
+      @include mqFree("1100px") {
+        max-width: unquote("min(24.5vh,320px)");
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  .news {
+    margin-top: 7.5rem;
+
+    @include mq("md") {
+      padding: 0 15px;
+    }
+
+    @include mq("sm") {
+      margin-top: 5.625rem;
+    }
+
+    h2 {
+      font-weight: 600 !important;
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    .row {
+      display: block;
+      text-align: center;
+
+      @include mq("sm") {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+
+    &-special {
+      color: #96002d;
+
+      br._sm {
         @include mq("md") {
-            display: none;
+          display: none;
         }
+      }
     }
 
-    .fv {
-        &-tit {
-            margin-bottom: 30px;
-            max-width: 120px;
-            text-align: center;
+    a {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 25px;
+      text-decoration: none;
+      transition: 0.3s opacity ease;
 
-            @include mq("sm") {
-                margin: 0 auto 30px;
-            }
+      @include mq("sm") {
+        padding: 1.7rem 0;
+      }
 
-            @include mq("md") {
-                max-width: unquote("min(24.5vh,220px)");
-                margin-bottom: 20px;
-                padding-left: 0;
-            }
-            @include mqFree("1100px") {
-                max-width: unquote("min(24.5vh,320px)");
-                margin-bottom: 30px;
-                padding-left: 2rem;
-            }
-
-            img {
-                max-width: 102px;
-                @include mq("md") {
-                    max-width: unquote("min(13.4vh,135px)");
-                }
-
-                @include mqFree("1100px") {
-                    max-width: unquote("min(13.4vh,175px)");
-                }
-            }
-        }
-
-        &-catch {
-            @include mq("sm") {
-                max-width: 150px;
-                margin: 0 auto;
-            }
-            @include mqFreeMax("500px") {
-                max-width: 120px;
-            }
-            @include mq("md") {
-                max-width: unquote("min(24.5vh,220px)");
-                padding-left: 0;
-            }
-
-            @include mqFree("1100px") {
-                max-width: unquote("min(24.5vh,320px)");
-                padding-left: 2rem;
-            }
-        }
+      &:hover {
+        opacity: 0.7;
+      }
     }
 
-    .news {
-        margin-top: 7.5rem;
+    time {
+      color: #333333;
+      font-family: kozuka-gothic-pr6n, sans-serif;
+      font-size: 1.125rem;
+      margin-right: 2rem;
+      text-align: left;
+      width: 95px;
 
-        @include mq("md") {
-            padding: 0 15px;
-        }
-
-        @include mq("sm") {
-            margin-top: 5.625rem;
-        }
-
-        h2 {
-            font-weight: 600 !important;
-            margin-bottom: 0;
-            text-align: center;
-        }
-
-        .row {
-            display: block;
-            text-align: center;
-
-            @include mq("sm") {
-                margin-right: 0;
-                margin-left: 0;
-            }
-        }
-
-        &-special {
-            color: #96002d;
-
-            br._sm {
-                @include mq("md") {
-                    display: none;
-                }
-            }
-        }
-
-        a {
-            display: flex;
-            justify-content: space-between;
-            padding: 30px 25px;
-            text-decoration: none;
-            transition: 0.3s opacity ease;
-
-            @include mq("sm") {
-                padding: 1.7rem 0;
-            }
-
-            &:hover {
-                opacity: 0.7;
-            }
-        }
-
-        time {
-            color: #333333;
-            font-family: kozuka-gothic-pr6n, sans-serif;
-            font-size: 1.125rem;
-            margin-right: 2rem;
-            text-align: left;
-            width: 95px;
-
-            @include mq("sm") {
-                font-size: 1rem;
-            }
-        }
-
-        &-list {
-            background: #fff9ed;
-            color: #444444;
-            margin: 3rem auto 0;
-            padding: 40px 30px;
-
-            @include mq("sm") {
-                margin: 1rem auto 0;
-                padding: 1.8rem;
-            }
-
-            li {
-                border-bottom: 1px solid #666666;
-
-                &:first-child {
-                    border-top: 1px solid #666666;
-                }
-            }
-        }
-
-        &-subtit {
-            color: #666666;
-            font-family: kozuka-gothic-pr6n, sans-serif !important;
-            text-align: left;
-            width: 80%;
-        }
+      @include mq("sm") {
+        font-size: 1rem;
+      }
     }
 
-    .banner {
-        margin-top: 7.5rem;
+    &-list {
+      background: #fff9ed;
+      color: #444444;
+      margin: 3rem auto 0;
+      padding: 40px 30px;
 
-        @include mq("sm") {
-            margin-top: 5.625rem;
+      @include mq("sm") {
+        margin: 1rem auto 0;
+        padding: 1.8rem;
+      }
+
+      li {
+        border-bottom: 1px solid #666666;
+
+        &:first-child {
+          border-top: 1px solid #666666;
         }
-
-        &-link {
-            display: block;
-            margin: 0 auto;
-            max-width: 950px;
-            width: 90%;
-            @include mq("sm") {
-                width: 100%;
-            }
-
-            &:not(:last-child) {
-                margin-bottom: 1rem;
-            }
-        }
-
-        &._top {
-            @include mq("sm") {
-                margin-top: 2rem;
-            }
-        }
-
-        &._pc {
-            @include mq("md") {
-                margin-bottom: 7.5rem;
-            }
-        }
+      }
     }
 
-    .delivery {
-        padding-bottom: 0;
+    &-subtit {
+      color: #666666;
+      font-family: kozuka-gothic-pr6n, sans-serif !important;
+      text-align: left;
+      width: 80%;
+    }
+  }
 
-        @include mq("md") {
-            margin-top: 2rem;
-        }
+  .banner {
+    margin-top: 7.5rem;
 
-        &-tit {
-            font-weight: 600 !important;
-        }
+    @include mq("sm") {
+      margin-top: 5.625rem;
     }
 
-    .about {
-        background: url(../img/shop/about.jpg) center / cover no-repeat;
-        padding: 10rem 0 6rem;
+    &-link {
+      display: block;
+      margin: 0 auto;
+      max-width: 950px;
+      width: 90%;
+      @include mq("sm") {
+        width: 100%;
+      }
 
-        @include mq("sm") {
-            padding: 2.5rem 0;
-        }
-
-        .container {
-            @include mqFreeMax("500px") {
-                padding-left: 5px;
-                padding-right: 5px;
-            }
-        }
-        .row {
-            margin-left: 0;
-            margin-right: 0;
-        }
-        .col-lg-12 {
-            @include mqFreeMax("500px") {
-                padding-left: 5px;
-                padding-right: 5px;
-            }
-        }
-
-        h2 {
-            color: #fff;
-            font-family: $font-family-min !important;
-            font-weight: 400 !important;
-            font-size: 1.35rem;
-            letter-spacing: 0;
-            line-height: 1.5;
-
-            @include mq("md") {
-                font-size: 2.5rem;
-                letter-spacing: 0.06em;
-            }
-
-            @include mqFree("900px") {
-                font-size: 3rem;
-            }
-        }
-
-        p {
-            color: #fff;
-            font-family: $font-family-min !important;
-            font-size: 0.85rem;
-            line-height: 2;
-
-            @include mq("sm") {
-                padding-bottom: 0;
-                padding-top: 1.5rem;
-            }
-            @include mq("md") {
-                font-size: 1.5rem;
-            }
-
-            @include mqFree("900px") {
-                font-size: 1.75rem;
-            }
-
-            br._sm {
-                @include mq("md") {
-                    display: none;
-                }
-            }
-        }
-
-        .heading-container {
-            @include mq("sm") {
-                margin-bottom: 0;
-            }
-        }
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
     }
 
-    .introduction {
-        padding: 0 15px;
-        @include mqFree("1300px") {
-            padding: 0;
-        }
-
-        @include mq("sm") {
-            padding-bottom: 0 !important;
-        }
-        &-mt {
-            @include mq("md") {
-                margin-top: 7.8rem;
-            }
-
-            .introduction-img {
-                @include mq("sm") {
-                    display: none;
-                }
-            }
-
-            .introduction-box {
-                @include mq("sm") {
-                    margin-bottom: 0;
-                }
-            }
-        }
-        &-box {
-            padding: 0;
-
-            @include mqFreeMax("992px") {
-                margin-bottom: 1.8rem;
-            }
-
-            &._left {
-                @include mqFree("992px") {
-                    padding-right: 1.5rem;
-                }
-            }
-
-            &._right {
-                @include mqFree("992px") {
-                    padding-left: 1.5rem;
-                }
-            }
-        }
-
-        &-head {
-            display: flex;
-            position: relative;
-            @include mqFreeMax("1300px") {
-                justify-content: center;
-            }
-
-            @include mq("sm") {
-                justify-content: flex-start;
-            }
-        }
-
-        &-tit {
-            color: #96002d;
-            font-family: $font-family-min !important;
-            font-weight: 400 !important;
-            line-height: 1.625;
-            text-align: left;
-
-            @include mq("sm") {
-                font-size: 1.375rem;
-                letter-spacing: 0;
-                line-height: 1.45;
-            }
-
-            @include mq("md") {
-                margin-right: 1.5rem;
-                letter-spacing: 0.06em;
-            }
-
-            @include mqFree("900px") {
-                margin-right: 4.5rem;
-            }
-        }
-
-        &-subtit {
-            color: #571127;
-            font-family: $font-family-nt !important;
-            font-size: 1.5rem;
-            margin-bottom: 1.8rem;
-            line-height: 1.5;
-            letter-spacing: 0.1em !important;
-            @include mq("sm") {
-                margin-bottom: 1.5rem;
-            }
-        }
-
-        &-txt {
-            color: #444444;
-            line-height: 1.875;
-            letter-spacing: 0.1em;
-
-            @include mq("md") {
-                font-size: 1.125rem;
-            }
-
-            @include mq("sm") {
-                letter-spacing: 0.02em;
-            }
-        }
-
-        &-img {
-            @include mq("md") {
-                margin-top: -1rem;
-            }
-
-            @include mq("sm") {
-                bottom: -20px;
-                position: absolute;
-                right: 15px;
-            }
-
-            img {
-                max-width: 72px;
-                @include mq("md") {
-                    max-width: 320px;
-                }
-            }
-        }
-
-        img {
-            margin-bottom: 0;
-        }
+    &._top {
+      @include mq("sm") {
+        margin-top: 2rem;
+      }
     }
 
-    .check {
-        @include mq("md") {
-            margin-top: 9.375rem;
-        }
-
-        &-list {
-            margin: 0 auto;
-            max-width: 750px;
-            width: 90%;
-            @include mqFree("1000px") {
-                width: 75%;
-            }
-        }
-
-        &-head {
-            font-family: $font-family-nt !important;
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin: 3.75rem auto 4.375rem;
-            line-height: 2;
-
-            @include mq("sm") {
-                display: none;
-            }
-        }
-
-        &-tit {
-            margin: 0 auto;
-            max-width: 525px;
-            width: 75%;
-
-            @include mqFree("1000px") {
-                width: 55%;
-            }
-
-            @include mq("sm") {
-                max-width: 375px;
-                margin-bottom: 2.5rem;
-                margin-left: auto;
-                margin-right: auto;
-                width: 90%;
-            }
-        }
-
-        &-img {
-            background-color: #ffffff;
-            max-width: 500px;
-
-            @include mq("sm") {
-                margin-bottom: 1.5rem;
-                text-align: left;
-            }
-
-            @include mq("md") {
-                margin: -4.4rem auto 1.5rem;
-                width: 50%;
-            }
-            img {
-                max-width: 280px;
-                @include mq("sm") {
-                    max-width: 250px;
-                }
-            }
-        }
-
-        &-item {
-            @include mq("md") {
-                border: 1px solid #444444;
-                padding: 3rem 1rem 2.2rem;
-            }
-
-            &:not(:last-child) {
-                margin-bottom: 4rem;
-            }
-        }
-
-        &-wrap {
-            @include mq("sm") {
-                text-align: left;
-            }
-            label {
-                margin-bottom: 0;
-                @include mq("sm") {
-                    width: 100%;
-                }
-                &:nth-child(2) {
-                    @include mq("md") {
-                        margin: 0 1rem;
-                    }
-
-                    @include mqFree("900px") {
-                        margin: 0 3.75rem;
-                    }
-                }
-
-                &:not(:last-child) {
-                    margin-bottom: 1rem;
-                }
-            }
-        }
-
-        &-txt {
-            color: #96002d;
-            font-size: 1rem;
-            font-weight: 600;
-            margin-top: 1rem;
-            line-height: 2;
-
-            @include mq("sm") {
-                letter-spacing: 0.02em;
-                line-height: 1.5;
-                text-align: left;
-            }
-        }
-    }
-
-    .feature {
-        margin-top: 3.75rem;
-
-        @include mq("sm") {
-            margin-bottom: 5.625rem;
-            margin-top: 5.625rem;
-        }
-
-        #featuredItems {
-            @include mq("sm") {
-                padding-bottom: 0;
-                padding-top: 0;
-            }
-        }
-
-        #ubusuna-featuredItems1 {
-            @include mqFreeMax("992px") {
-                margin-bottom: 3rem;
-            }
-
-            @include mq("sm") {
-                margin-bottom: 3.75rem;
-            }
-        }
-
-        &-head {
-            @include mq("sm") {
-                margin-bottom: 0.8rem;
-            }
-        }
-
-        &-tit {
-            font-weight: 600 !important;
-            margin-bottom: 0;
-            text-align: center;
-        }
-
-        &-img {
-            padding-top: 82.75% !important;
-            position: relative;
-            width: 100%;
-
-            img {
-                display: block;
-                left: 0;
-                height: 100%;
-                object-fit: cover;
-                position: absolute;
-                top: 0;
-                width: 100%;
-            }
-        }
-
-        &-body {
-            padding: 1.5rem 1rem;
-            @include mq("sm") {
-                padding: 0 1rem;
-            }
-        }
-
-        &-subtit.item-title {
-            font-family: $font-family-nt !important;
-            font-size: 1.5rem;
-            font-weight: 700 !important;
-
-            @include mq("sm") {
-                font-size: 1.125rem;
-                margin: 1.5rem 0 !important;
-            }
-        }
-
-        &-link {
-            color: #ffffff !important;
-            font-family: $font-family-nt;
-            font-size: 1.125rem;
-            font-weight: 400;
-            margin-top: 0;
-
-            @include mq("sm") {
-                font-size: 0.875rem;
-            }
-        }
-    }
-
-    .recommend {
+    &._pc {
+      @include mq("md") {
         margin-bottom: 7.5rem;
+      }
+    }
+  }
 
-        @include mq("sm") {
-            margin-bottom: 5rem;
-        }
+  .delivery {
+    padding-bottom: 0;
 
-        &-tit {
-            font-weight: 600 !important;
-        }
-
-        &-box {
-            flex: unset;
-            padding: 0;
-            width: calc(33.3333% - 2.8rem * 2 / 3);
-
-            @include mq("sm") {
-                margin-bottom: 1.25rem;
-                width: calc(50% - 0.625rem / 2);
-            }
-
-            &:nth-of-type(even) {
-                @include mq("sm") {
-                    margin-right: 0.625rem;
-                }
-            }
-
-            &:nth-of-type(3),
-            &:nth-of-type(6) {
-                @include mq("md") {
-                    margin-left: 2.8rem;
-                    margin-right: 2.8rem;
-                }
-            }
-
-            &._mb {
-                @include mq("md") {
-                    margin-bottom: 3.5rem;
-                }
-            }
-
-            a {
-                display: block;
-            }
-        }
-
-        &-name {
-            font-family: $font-family-nt;
-            font-size: 1.125rem;
-            font-weight: 700;
-            margin: 2rem auto 0.5rem;
-            text-align: center;
-
-            @include mq("sm") {
-                font-size: 0.625rem;
-                margin: 0.6rem auto 0.3rem;
-            }
-        }
-
-        &-price {
-            font-family: $font-family-nt !important;
-            font-size: 1.125rem;
-            letter-spacing: 0.1em;
-            text-align: center;
-            @include mq("sm") {
-                font-size: 0.75rem;
-                line-height: 1;
-            }
-        }
-
-        &-hwrap {
-            padding: 0;
-        }
-
-        &-row {
-            padding: 0 15px;
-
-            &:not(:last-child) {
-                margin-bottom: 3rem;
-            }
-        }
-
-        &-head {
-            margin-bottom: 3rem;
-            margin-top: 2rem;
-            padding: 0.5rem;
-            text-align: center;
-
-            @include mq("sm") {
-                margin-bottom: 3rem;
-                margin-top: 1rem;
-            }
-        }
-
-        &-subtit {
-            border-bottom: 2px solid #96002d;
-            color: #000;
-            display: inline-block;
-            font-family: $font-family-nt;
-            font-size: 1.75rem;
-            padding: 0 4rem 1rem;
-            @include mq("sm") {
-                font-size: 1.5rem;
-            }
-        }
-
-        &-img {
-            padding-top: 82.75% !important;
-            position: relative;
-            img {
-                display: block;
-                left: 0;
-                height: 100%;
-                -o-object-fit: cover;
-                object-fit: cover;
-                position: absolute;
-                top: 0;
-            }
-        }
-
-        .heading-container {
-            text-align: center;
-        }
+    @include mq("md") {
+      margin-top: 2rem;
     }
 
-    .testimonial {
-        margin-bottom: 7.5rem;
-        padding: 0;
-
-        @include mq("sm") {
-            margin-bottom: 5rem;
-        }
-
-        &-container {
-            @include mq("md") {
-                display: flex;
-            }
-        }
-
-        &-card {
-            @include mq("md") {
-                width: calc(33.3333% - 1rem * 2 / 3);
-            }
-            @include mqFree("900px") {
-                width: calc(33.3333% - 2rem * 2 / 3);
-            }
-            @include mqFree("1300px") {
-                width: calc(33.3333% - 5rem * 2 / 3);
-            }
-
-            &:not(:last-child) {
-                @include mq("sm") {
-                    margin-bottom: 2.5rem;
-                }
-                @include mq("md") {
-                    margin-right: 1rem;
-                }
-                @include mqFree("900px") {
-                    margin-right: 2rem;
-                }
-                @include mqFree("1300px") {
-                    margin-right: 5rem;
-                }
-            }
-
-            img {
-                border-radius: 50%;
-                display: block;
-                height: 108px;
-                margin: 0 auto;
-                object-fit: cover;
-                width: 108px;
-            }
-        }
-
-        &-head {
-            margin-bottom: 2rem;
-        }
-
-        &-tit {
-            font-weight: 600 !important;
-            padding-bottom: 0;
-        }
-
-        &-text {
-            font-size: 1rem;
-            margin: 0 auto 0.6rem;
-            max-width: 256px;
-            line-height: 1.5;
-            letter-spacing: 0.03em;
-            text-align: left;
-            @include mq("sm") {
-                font-size: 0.875rem;
-                max-width: 265px;
-                line-height: 1.7;
-                text-align: center;
-            }
-        }
-
-        &-author {
-            font-family: $font-family-nt !important;
-            font-size: 0.875rem;
-            letter-spacing: 0.1em;
-            text-align: center;
-        }
+    &-tit {
+      font-weight: 600 !important;
     }
+  }
 
-    .appearedmedia {
-        margin-bottom: 10rem;
-        padding: 0;
+  .about {
+    background: url(../img/shop/about.jpg) center / cover no-repeat;
+    padding: 10rem 0 6rem;
 
-        @include mq("sm") {
-            margin-bottom: 3.2rem;
-        }
-
-        &-tit {
-            font-weight: 600 !important;
-        }
-
-        &-container {
-            display: flex;
-            margin: 2rem auto 0;
-            max-width: 1000px;
-
-            @include mq("sm") {
-                flex-wrap: wrap;
-                padding: 0 15px;
-            }
-        }
-
-        &-box {
-            width: calc(50% - 2.8rem / 2);
-
-            @include mq("sm") {
-                width: 100%;
-            }
-
-            &:first-child {
-                @include mq("md") {
-                    margin-right: 2.8rem;
-                }
-                @include mq("sm") {
-                    margin-bottom: 3.65rem;
-                }
-            }
-
-            a {
-                display: block;
-            }
-        }
-
-        &-img {
-            img {
-                margin: 0;
-                width: 100%;
-            }
-        }
-
-        &-txt {
-            font-family: $font-family-nt !important;
-            font-size: 1.125rem;
-            font-weight: 700 !important;
-            margin-top: 2.2rem;
-            text-align: center;
-
-            @include mq("sm") {
-                font-size: 1.25rem;
-                margin-top: 1.25rem;
-            }
-        }
-    }
-
-    .benefits {
-        background-color: #f6f7f7;
-        padding: 5.3rem 0 7.5rem;
-
-        @include mq("sm") {
-            padding: 5rem 0 5.625rem;
-        }
-
-        &-tit {
-            font-weight: 600 !important;
-        }
-
-        &-head {
-            margin-top: 2rem;
-            line-height: 1.875;
-            @include mq("md") {
-                letter-spacing: 0.1em;
-            }
-
-            @include mq("sm") {
-                margin-bottom: 3.75rem;
-                margin-top: 0.5rem;
-                letter-spacing: 0;
-                text-align: left;
-            }
-        }
-
-        &-box {
-            background: #fff;
-            padding: 3rem 1.5rem;
-            box-shadow: 0 3px 6px rgba(#000000, 0.16);
-            border-radius: 50px;
-            width: calc(50% - 2.8rem / 2);
-
-            @include mq("sm") {
-                border-radius: 10px;
-                padding: 1.8rem 1.5rem 3rem;
-                width: 100%;
-            }
-
-            &:first-child {
-                @include mq("sm") {
-                    margin-bottom: 2.5rem;
-                }
-                @include mq("md") {
-                    margin-right: 2.8rem;
-                }
-            }
-        }
-
-        &-container {
-            display: flex;
-            @include mq("sm") {
-                flex-wrap: wrap;
-            }
-        }
-
-        &-txt {
-            font-weight: 700;
-            margin: 0 auto;
-            max-width: 462px;
-            letter-spacing: 0.1em;
-            line-height: 2;
-            text-align: left;
-
-            @include mq("sm") {
-                font-size: 1.125rem;
-                letter-spacing: 0.05em;
-                line-height: 1.6667;
-            }
-
-            @include mq("md") {
-                font-size: 1.3rem;
-            }
-            @include mqFree("1200px") {
-                font-size: 1.5rem;
-            }
-        }
-
-        &-icon {
-            .fa {
-                font-size: 5.5rem;
-                @include mq("sm") {
-                    font-size: 3.5rem;
-                }
-            }
-        }
-    }
-
-    .split {
-        display: flex;
-        margin-top: 7.5rem;
-
-        @include mq("sm") {
-            flex-wrap: wrap;
-            margin-top: 5.625rem;
-        }
-
-        .area-1 {
-            @include mq("md") {
-                height: auto;
-                width: 50%;
-            }
-
-            @include mq("sm") {
-                width: 100%;
-            }
-        }
-
-        .area-2 {
-            padding-top: 5.625rem;
-
-            @include mq("sm") {
-                padding-bottom: 5.625rem;
-                padding-top: 2.5rem;
-            }
-        }
-
-        &-container {
-            @include mq("md") {
-                margin-right: 2rem;
-                max-width: 520px;
-            }
-        }
-
-        &-tit {
-            font-size: 1.75rem;
-            font-weight: 600 !important;
-            margin-bottom: 2.8rem;
-            letter-spacing: 0.03em;
-
-            @include mq("sm") {
-                font-size: 1.5rem;
-                margin-bottom: 2rem;
-            }
-        }
-
-        &-txt {
-            font-size: 1.125rem;
-            letter-spacing: 0.03em;
-            line-height: 2.66;
-            @include mq("sm") {
-                font-size: 1rem;
-                line-height: 1.875;
-            }
-        }
-    }
-
-    .faq {
-        background-color: #f6f7f7;
-
-        @include mq("sm") {
-            padding: 5.625rem 0 3.75rem;
-        }
-
-        &-container {
-            padding: 4.75rem 5.25rem 3rem;
-            width: 100%;
-
-            @include mq("sm") {
-                padding: 1rem 1rem;
-            }
-        }
-
-        &-tit {
-            font-weight: 600 !important;
-        }
-
-        &-subtit {
-            color: #fff;
-            font-size: 1.4rem;
-            padding: 0.8rem 3rem;
-
-            @include mq("sm") {
-                font-size: 1.1rem;
-            }
-
-            &::before {
-                font-size: 3rem;
-                top: 3px;
-
-                @include mq("sm") {
-                    top: -2px;
-                }
-            }
-        }
-
-        &-txt {
-            color: #444444;
-            font-size: 1.3rem;
-
-            @include mq("sm") {
-                font-size: 1rem;
-                margin-bottom: 1rem;
-            }
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
+    @include mq("sm") {
+      padding: 2.5rem 0;
     }
 
     .container {
-        padding-right: 20px;
-        padding-left: 20px;
-        @include mqFreeMax("1000px") {
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 850px;
+      @include mqFreeMax("500px") {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .col-lg-12 {
+      @include mqFreeMax("500px") {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+
+    h2 {
+      color: #fff;
+      font-family: $font-family-min !important;
+      font-weight: 400 !important;
+      font-size: 1.35rem;
+      letter-spacing: 0;
+      line-height: 1.5;
+
+      @include mq("md") {
+        font-size: 2.5rem;
+        letter-spacing: 0.06em;
+      }
+
+      @include mqFree("900px") {
+        font-size: 3rem;
+      }
+    }
+
+    p {
+      color: #fff;
+      font-family: $font-family-min !important;
+      font-size: 0.85rem;
+      line-height: 2;
+
+      @include mq("sm") {
+        padding-bottom: 0;
+        padding-top: 1.5rem;
+      }
+      @include mq("md") {
+        font-size: 1.5rem;
+      }
+
+      @include mqFree("900px") {
+        font-size: 1.75rem;
+      }
+
+      br._sm {
+        @include mq("md") {
+          display: none;
         }
+      }
+    }
+
+    .heading-container {
+      @include mq("sm") {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .introduction {
+    padding: 0 15px;
+    @include mqFree("1300px") {
+      padding: 0;
+    }
+
+    @include mq("sm") {
+      padding-bottom: 0 !important;
+    }
+    &-mt {
+      @include mq("md") {
+        margin-top: 7.8rem;
+      }
+
+      .introduction-img {
+        @include mq("sm") {
+          display: none;
+        }
+      }
+
+      .introduction-box {
+        @include mq("sm") {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &-box {
+      padding: 0;
+
+      @include mqFreeMax("992px") {
+        margin-bottom: 1.8rem;
+      }
+
+      &._left {
+        @include mqFree("992px") {
+          padding-right: 1.5rem;
+        }
+      }
+
+      &._right {
+        @include mqFree("992px") {
+          padding-left: 1.5rem;
+        }
+      }
+    }
+
+    &-head {
+      display: flex;
+      position: relative;
+      @include mqFreeMax("1300px") {
+        justify-content: center;
+      }
+
+      @include mq("sm") {
+        justify-content: flex-start;
+      }
+    }
+
+    &-tit {
+      color: #96002d;
+      font-family: $font-family-min !important;
+      font-weight: 400 !important;
+      line-height: 1.625;
+      text-align: left;
+
+      @include mq("sm") {
+        font-size: 1.375rem;
+        letter-spacing: 0;
+        line-height: 1.45;
+      }
+
+      @include mq("md") {
+        margin-right: 1.5rem;
+        letter-spacing: 0.06em;
+      }
+
+      @include mqFree("900px") {
+        margin-right: 4.5rem;
+      }
+    }
+
+    &-subtit {
+      color: #571127;
+      font-family: $font-family-nt !important;
+      font-size: 1.5rem;
+      margin-bottom: 1.8rem;
+      line-height: 1.5;
+      letter-spacing: 0.1em !important;
+      @include mq("sm") {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    &-txt {
+      color: #444444;
+      line-height: 1.875;
+      letter-spacing: 0.1em;
+
+      @include mq("md") {
+        font-size: 1.125rem;
+      }
+
+      @include mq("sm") {
+        letter-spacing: 0.02em;
+      }
+    }
+
+    &-img {
+      @include mq("md") {
+        margin-top: -1rem;
+      }
+
+      @include mq("sm") {
+        bottom: -20px;
+        position: absolute;
+        right: 15px;
+      }
+
+      img {
+        max-width: 72px;
+        @include mq("md") {
+          max-width: 320px;
+        }
+      }
+    }
+
+    img {
+      margin-bottom: 0;
+    }
+  }
+
+  .check {
+    @include mq("md") {
+      margin-top: 9.375rem;
+    }
+
+    &-list {
+      margin: 0 auto;
+      max-width: 750px;
+      width: 90%;
+      @include mqFree("1000px") {
+        width: 75%;
+      }
+    }
+
+    &-head {
+      font-family: $font-family-nt !important;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 3.75rem auto 4.375rem;
+      line-height: 2;
+
+      @include mq("sm") {
+        display: none;
+      }
+    }
+
+    &-tit {
+      margin: 0 auto;
+      max-width: 525px;
+      width: 75%;
+
+      @include mqFree("1000px") {
+        width: 55%;
+      }
+
+      @include mq("sm") {
+        max-width: 375px;
+        margin-bottom: 2.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+      }
+    }
+
+    &-img {
+      background-color: #ffffff;
+      max-width: 500px;
+
+      @include mq("sm") {
+        margin-bottom: 1.5rem;
+        text-align: left;
+      }
+
+      @include mq("md") {
+        margin: -4.4rem auto 1.5rem;
+        width: 50%;
+      }
+      img {
+        max-width: 280px;
+        @include mq("sm") {
+          max-width: 250px;
+        }
+      }
+    }
+
+    &-item {
+      @include mq("md") {
+        border: 1px solid #444444;
+        padding: 3rem 1rem 2.2rem;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+    }
+
+    &-wrap {
+      @include mq("sm") {
+        text-align: left;
+      }
+      label {
+        margin-bottom: 0;
+        @include mq("sm") {
+          width: 100%;
+        }
+        &:nth-child(2) {
+          @include mq("md") {
+            margin: 0 1rem;
+          }
+
+          @include mqFree("900px") {
+            margin: 0 3.75rem;
+          }
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    &-txt {
+      color: #96002d;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-top: 1rem;
+      line-height: 2;
+
+      @include mq("sm") {
+        letter-spacing: 0.02em;
+        line-height: 1.5;
+        text-align: left;
+      }
+    }
+  }
+
+  .feature {
+    margin-top: 3.75rem;
+
+    @include mq("sm") {
+      margin-bottom: 5.625rem;
+      margin-top: 5.625rem;
+    }
+
+    #featuredItems {
+      @include mq("sm") {
+        padding-bottom: 0;
+        padding-top: 0;
+      }
+    }
+
+    #ubusuna-featuredItems1 {
+      @include mqFreeMax("992px") {
+        margin-bottom: 3rem;
+      }
+
+      @include mq("sm") {
+        margin-bottom: 3.75rem;
+      }
+    }
+
+    &-head {
+      @include mq("sm") {
+        margin-bottom: 0.8rem;
+      }
+    }
+
+    &-tit {
+      font-weight: 600 !important;
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    &-img {
+      padding-top: 82.75% !important;
+      position: relative;
+      width: 100%;
+
+      img {
+        display: block;
+        left: 0;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    }
+
+    &-body {
+      padding: 1.5rem 1rem;
+      @include mq("sm") {
+        padding: 0 1rem;
+      }
+    }
+
+    &-subtit.item-title {
+      font-family: $font-family-nt !important;
+      font-size: 1.5rem;
+      font-weight: 700 !important;
+
+      @include mq("sm") {
+        font-size: 1.125rem;
+        margin: 1.5rem 0 !important;
+      }
+    }
+
+    &-link {
+      color: #ffffff !important;
+      font-family: $font-family-nt;
+      font-size: 1.125rem;
+      font-weight: 400;
+      margin-top: 0;
+
+      @include mq("sm") {
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+  .recommend {
+    margin-bottom: 7.5rem;
+
+    @include mq("sm") {
+      margin-bottom: 5rem;
+    }
+
+    &-tit {
+      font-weight: 600 !important;
+    }
+
+    &-box {
+      flex: unset;
+      padding: 0;
+      width: calc(33.3333% - 2.8rem * 2 / 3);
+
+      @include mq("sm") {
+        margin-bottom: 1.25rem;
+        width: calc(50% - 0.625rem / 2);
+      }
+
+      &:nth-of-type(even) {
+        @include mq("sm") {
+          margin-right: 0.625rem;
+        }
+      }
+
+      &:nth-of-type(3),
+      &:nth-of-type(6) {
+        @include mq("md") {
+          margin-left: 2.8rem;
+          margin-right: 2.8rem;
+        }
+      }
+
+      &._mb {
+        @include mq("md") {
+          margin-bottom: 3.5rem;
+        }
+      }
+
+      a {
+        display: block;
+      }
+    }
+
+    &-name {
+      font-family: $font-family-nt;
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin: 2rem auto 0.5rem;
+      text-align: center;
+
+      @include mq("sm") {
+        font-size: 0.625rem;
+        margin: 0.6rem auto 0.3rem;
+      }
+    }
+
+    &-price {
+      font-family: $font-family-nt !important;
+      font-size: 1.125rem;
+      letter-spacing: 0.1em;
+      text-align: center;
+      @include mq("sm") {
+        font-size: 0.75rem;
+        line-height: 1;
+      }
+    }
+
+    &-hwrap {
+      padding: 0;
+    }
+
+    &-row {
+      padding: 0 15px;
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    &-head {
+      margin-bottom: 3rem;
+      margin-top: 2rem;
+      padding: 0.5rem;
+      text-align: center;
+
+      @include mq("sm") {
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+      }
+    }
+
+    &-subtit {
+      border-bottom: 2px solid #96002d;
+      color: #000;
+      display: inline-block;
+      font-family: $font-family-nt;
+      font-size: 1.75rem;
+      padding: 0 4rem 1rem;
+      @include mq("sm") {
+        font-size: 1.5rem;
+      }
+    }
+
+    &-img {
+      padding-top: 82.75% !important;
+      position: relative;
+      img {
+        display: block;
+        left: 0;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+      }
+    }
+
+    .heading-container {
+      text-align: center;
+    }
+  }
+
+  .testimonial {
+    margin-bottom: 7.5rem;
+    padding: 0;
+
+    @include mq("sm") {
+      margin-bottom: 5rem;
+    }
+
+    &-container {
+      @include mq("md") {
+        display: flex;
+      }
+    }
+
+    &-card {
+      @include mq("md") {
+        width: calc(33.3333% - 1rem * 2 / 3);
+      }
+      @include mqFree("900px") {
+        width: calc(33.3333% - 2rem * 2 / 3);
+      }
+      @include mqFree("1300px") {
+        width: calc(33.3333% - 5rem * 2 / 3);
+      }
+
+      &:not(:last-child) {
+        @include mq("sm") {
+          margin-bottom: 2.5rem;
+        }
+        @include mq("md") {
+          margin-right: 1rem;
+        }
+        @include mqFree("900px") {
+          margin-right: 2rem;
+        }
+        @include mqFree("1300px") {
+          margin-right: 5rem;
+        }
+      }
+
+      img {
+        border-radius: 50%;
+        display: block;
+        height: 108px;
+        margin: 0 auto;
+        object-fit: cover;
+        width: 108px;
+      }
+    }
+
+    &-head {
+      margin-bottom: 2rem;
+    }
+
+    &-tit {
+      font-weight: 600 !important;
+      padding-bottom: 0;
+    }
+
+    &-text {
+      font-size: 1rem;
+      margin: 0 auto 0.6rem;
+      max-width: 256px;
+      line-height: 1.5;
+      letter-spacing: 0.03em;
+      text-align: left;
+      @include mq("sm") {
+        font-size: 0.875rem;
+        max-width: 265px;
+        line-height: 1.7;
+        text-align: center;
+      }
+    }
+
+    &-author {
+      font-family: $font-family-nt !important;
+      font-size: 0.875rem;
+      letter-spacing: 0.1em;
+      text-align: center;
+    }
+  }
+
+  .appearedmedia {
+    margin-bottom: 10rem;
+    padding: 0;
+
+    @include mq("sm") {
+      margin-bottom: 3.2rem;
+    }
+
+    &-tit {
+      font-weight: 600 !important;
+    }
+
+    &-container {
+      display: flex;
+      margin: 2rem auto 0;
+      max-width: 1000px;
+
+      @include mq("sm") {
+        flex-wrap: wrap;
+        padding: 0 15px;
+      }
+    }
+
+    &-box {
+      width: calc(50% - 2.8rem / 2);
+
+      @include mq("sm") {
+        width: 100%;
+      }
+
+      &:first-child {
+        @include mq("md") {
+          margin-right: 2.8rem;
+        }
+        @include mq("sm") {
+          margin-bottom: 3.65rem;
+        }
+      }
+
+      a {
+        display: block;
+      }
+    }
+
+    &-img {
+      img {
+        margin: 0;
+        width: 100%;
+      }
+    }
+
+    &-txt {
+      font-family: $font-family-nt !important;
+      font-size: 1.125rem;
+      font-weight: 700 !important;
+      margin-top: 2.2rem;
+      text-align: center;
+
+      @include mq("sm") {
+        font-size: 1.25rem;
+        margin-top: 1.25rem;
+      }
+    }
+  }
+
+  .benefits {
+    background-color: #f6f7f7;
+    padding: 5.3rem 0 7.5rem;
+
+    @include mq("sm") {
+      padding: 5rem 0 5.625rem;
+    }
+
+    &-tit {
+      font-weight: 600 !important;
+    }
+
+    &-head {
+      margin-top: 2rem;
+      line-height: 1.875;
+      @include mq("md") {
+        letter-spacing: 0.1em;
+      }
+
+      @include mq("sm") {
+        margin-bottom: 3.75rem;
+        margin-top: 0.5rem;
+        letter-spacing: 0;
+        text-align: left;
+      }
+    }
+
+    &-box {
+      background: #fff;
+      padding: 3rem 1.5rem;
+      box-shadow: 0 3px 6px rgba(#000000, 0.16);
+      border-radius: 50px;
+      width: calc(50% - 2.8rem / 2);
+
+      @include mq("sm") {
+        border-radius: 10px;
+        padding: 1.8rem 1.5rem 3rem;
+        width: 100%;
+      }
+
+      &:first-child {
+        @include mq("sm") {
+          margin-bottom: 2.5rem;
+        }
+        @include mq("md") {
+          margin-right: 2.8rem;
+        }
+      }
+    }
+
+    &-container {
+      display: flex;
+      @include mq("sm") {
+        flex-wrap: wrap;
+      }
+    }
+
+    &-txt {
+      font-weight: 700;
+      margin: 0 auto;
+      max-width: 462px;
+      letter-spacing: 0.1em;
+      line-height: 2;
+      text-align: left;
+
+      @include mq("sm") {
+        font-size: 1.125rem;
+        letter-spacing: 0.05em;
+        line-height: 1.6667;
+      }
+
+      @include mq("md") {
+        font-size: 1.3rem;
+      }
+      @include mqFree("1200px") {
+        font-size: 1.5rem;
+      }
+    }
+
+    &-icon {
+      .fa {
+        font-size: 5.5rem;
+        @include mq("sm") {
+          font-size: 3.5rem;
+        }
+      }
+    }
+  }
+
+  .split {
+    display: flex;
+    margin-top: 7.5rem;
+
+    @include mq("sm") {
+      flex-wrap: wrap;
+      margin-top: 5.625rem;
+    }
+
+    .area-1 {
+      @include mq("md") {
+        height: auto;
+        width: 50%;
+      }
+
+      @include mq("sm") {
+        width: 100%;
+      }
+    }
+
+    .area-2 {
+      padding-top: 5.625rem;
+
+      @include mq("sm") {
+        padding-bottom: 5.625rem;
+        padding-top: 2.5rem;
+      }
+    }
+
+    &-container {
+      @include mq("md") {
+        margin-right: 2rem;
+        max-width: 520px;
+      }
+    }
+
+    &-tit {
+      font-size: 1.75rem;
+      font-weight: 600 !important;
+      margin-bottom: 2.8rem;
+      letter-spacing: 0.03em;
+
+      @include mq("sm") {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &-txt {
+      font-size: 1.125rem;
+      letter-spacing: 0.03em;
+      line-height: 2.66;
+      @include mq("sm") {
+        font-size: 1rem;
+        line-height: 1.875;
+      }
+    }
+  }
+
+  .faq {
+    background-color: #f6f7f7;
+
+    @include mq("sm") {
+      padding: 5.625rem 0 3.75rem;
+    }
+
+    &-container {
+      padding: 4.75rem 5.25rem 3rem;
+      width: 100%;
+
+      @include mq("sm") {
+        padding: 1rem 1rem;
+      }
+    }
+
+    &-tit {
+      font-weight: 600 !important;
+    }
+
+    &-subtit {
+      color: #fff;
+      font-size: 1.4rem;
+      padding: 0.8rem 3rem;
+
+      @include mq("sm") {
+        font-size: 1.1rem;
+      }
+
+      &::before {
+        font-size: 3rem;
+        top: 3px;
 
         @include mq("sm") {
-            padding-right: 40px;
-            padding-left: 40px;
+          top: -2px;
         }
-
-        @include mqFreeMax("500px") {
-            padding-right: 15px;
-            padding-left: 15px;
-        }
+      }
     }
+
+    &-txt {
+      color: #444444;
+      font-size: 1.3rem;
+
+      @include mq("sm") {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+    @include mqFreeMax("1000px") {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 850px;
+    }
+
+    @include mq("sm") {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+
+    @include mqFreeMax("500px") {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
 }
