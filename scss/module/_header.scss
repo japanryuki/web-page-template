@@ -15,9 +15,22 @@
         }
     }
 
+    .header-tit-wrap{
+        position: absolute;
+        right: 6%;
+        top: 50%;
+        transform: translateY(-50%);
+        @include mq("sm") {
+            left: 51%;
+            top: 38%;
+            transform: translate(-50%,-50%);
+            right: unset;
+        }
+    }
+
     h1.top-mv-tit {
         font-family: $font-family-min;
-        font-size: unquote(" min(10vh, 82px)");
+        font-size: 6vw;
         margin-left: auto;
         margin-right: 2rem;
         line-height: 1.3;

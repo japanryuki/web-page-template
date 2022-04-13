@@ -1,18 +1,20 @@
 .frontpage.custom {
   .header {
     background: unset !important;
-    height: 100vh;
-    max-height: 667px;
     min-height: unset;
     position: relative;
     overflow: unset;
 
     @include mq("md") {
-      max-height: 800px;
+      margin-top: 76px;
+      padding-top: 66.6666%;
     }
-
-    @include mqFree("1100px") {
-      max-height: 1310px;
+    @include mqFree("992px") {
+      margin-top: 0;
+    }  
+    @include mq("sm") {
+      margin-top: 64px;
+      padding-top: 177.8666%;
     }
 
     &-container {
@@ -29,6 +31,12 @@
       @include mqFree("1100px") {
         padding-top: unquote("min(15vh,330px)");
       }
+    }
+
+    &-slant{
+        height: 100%;
+        position: relative;
+        z-index: 2;
     }
   }
 
